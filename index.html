@@ -13,7 +13,19 @@
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Source+Sans+Pro:wght@400;700&display=swap" rel="stylesheet">
     </head>
     <body>
-        <header class="header"></header>
+        <header class="header">
+            <svg class="header__logo" width="70px" height="44px">
+                <use xlink:href="images/sprite.svg#header-logo"></use>
+            </svg>
+            <nav class="header__menu">
+                <!-- Нужно обязательно проверить, чтобы названия ссылок совпадали с названиями файлов страниц, когда сделаем их -->
+                <a href="index.html" class="header__link">main</a>
+                <a href="gallery.html" class="header__link">gallery</a>
+                <a href="projects.html" class="header__link">projects</a>
+                <a href="certification.html" class="header__link">certifications</a>
+                <a href="contacts.html" class="header__link">contacts</a>
+            </nav>
+        </header>
         <main class="main"></main>
             <div class="intro"></div>
             <div class="about"></div>
