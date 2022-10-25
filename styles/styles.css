@@ -6,6 +6,7 @@ body {
     font-family: 'Roboto', 'Source Sans Pro', sans-serif;
 }
 
+
 /* DESKTOP - МОНИТОР КОМПЬЮТЕРА */
 @media screen and (min-width: 940px) {
 
@@ -32,10 +33,33 @@ body {
     /* MAIN */
 
     .main {
+        display: grid;
         grid-template-columns: 9.4vw [main-content-start] 1fr [main-content-end] 9.4vw;
         /* так секции встанут с одинаковыми отступами с двух сторон и все будут выстраиваться по одной линии, когда меняем ширину экрана. Надо только каждой секции задать grid-column-start: main-content-start; (Юля) */
         grid-template-rows: repeat(5, max-content);
         row-gap: 120px;
+    }
+
+    .mission {
+        display: grid;
+        grid-template-columns: 9.4vw [main-content-start] 1fr [main-content-end] 9.4vw;
+    }
+
+    .mission-title, .mission-cards {
+        grid-column-start: main-content-start;
+    }
+
+    .mission-cards {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 10%;
+    }
+
+    .title-text {
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-weight: 300;
+        font-size: 52px;
+        color: #BDBDBD;
     }
 }
 
