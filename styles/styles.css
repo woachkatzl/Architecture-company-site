@@ -56,7 +56,7 @@ body {
     .about-section {
         display: grid;
         grid-template-columns: 60% 40%;
-        column-gap: 30px;
+        gap: 2vw;
         outline: 1px solid red;
     }
 
@@ -66,7 +66,6 @@ body {
         grid-template-rows: 60% 40%;
         grid-template-areas: "about-img1 about-img2"
             "about-img3 about-img2";
-
     }
 
     .about-img1 {
@@ -79,6 +78,37 @@ body {
 
     .about-img2 {
         grid-area: about-img2;
+    }
+
+    .about-section__cards {
+        width: 90%;
+    }
+
+    .about-title {
+        font-size: 64px;
+        line-height: 64px;
+        margin: 0;
+        margin-bottom: 20px;
+    }
+
+    .about-text {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 25px;
+    }
+
+    .about-button {
+        width: 50%;
+        height: 12%;
+        margin-top: 20px;
+
+        font-family: 'Roboto', sans-serif;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 12px;
+        letter-spacing: 0.2em;
+        text-transform: uppercase;
     }
 
 
