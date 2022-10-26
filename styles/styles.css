@@ -43,6 +43,45 @@ body {
         row-gap: 120px;
     }
 
+    /*ABOUT*/
+    .about {
+        display: grid;
+        grid-template-columns: 9.4vw [main-content-start] 1fr [main-content-end] 9.4vw;
+    }
+
+    .about-section {
+        grid-column-start: main-content-start;
+    }
+
+    .about-section {
+        display: grid;
+        grid-template-columns: 60% 40%;
+        column-gap: 30px;
+        outline: 1px solid red;
+    }
+
+    .about-section__images {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 60% 40%;
+        grid-template-areas: "about-img1 about-img2"
+            "about-img3 about-img2";
+
+    }
+
+    .about-img1 {
+        grid-area: about-img1;
+    }
+
+    .about-img3 {
+        grid-area: about-img3;
+    }
+
+    .about-img2 {
+        grid-area: about-img2;
+    }
+
+
     /* MISSION */
 
     .mission {
