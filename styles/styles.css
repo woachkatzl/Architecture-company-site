@@ -55,61 +55,58 @@ body {
 
     .about-section {
         display: grid;
-        grid-template-columns: 60% 40%;
-        gap: 2vw;
+        grid-template-columns: 55% 1fr;
         outline: 1px solid red;
+        gap: 3vw;
     }
 
     .about-section__images {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 60% 40%;
-        grid-template-areas: "about-img1 about-img2"
-            "about-img3 about-img2";
+        grid-template-rows: 1fr;
+        grid-template-areas: "about-img-group1 about-img-group2";
+        gap: 3vw;
     }
 
-    .about-img1 {
-        grid-area: about-img1;
+    .about-img-group1 {
+        grid-area: about-img-group1;
+        display: grid;
+        grid-template-rows: max-content;
+        gap: 3vw;
+        align-items: center;
     }
 
-    .about-img3 {
-        grid-area: about-img3;
-    }
-
-    .about-img2 {
-        grid-area: about-img2;
+    .about-img-group2 {
+        grid-area: about-img-group2;
+        display: flex;
+        align-items: center;
     }
 
     .about-section__cards {
-        width: 90%;
+        width: 85%;
     }
 
-    .about-title {
-        font-size: 64px;
-        line-height: 64px;
-        margin: 0;
-        margin-bottom: 20px;
+    .about-img1 {
+        width: 20vw;
+        height: 18vw;
     }
 
-    .about-text {
-        font-family: 'Roboto', sans-serif;
-        font-weight: 300;
-        font-size: 16px;
-        line-height: 25px;
+    .about-img3 {
+        width: 20vw;
+        height: 10vw;
+    }
+
+    .about-img2 {
+        width: 20vw;
+        height: 25vw;
     }
 
     .about-button {
         width: 50%;
         height: 12%;
-        margin-top: 20px;
-
-        font-family: 'Roboto', sans-serif;
-        font-weight: 400;
-        font-size: 12px;
-        line-height: 12px;
-        letter-spacing: 0.2em;
-        text-transform: uppercase;
     }
+
+
 
 
     /* MISSION */
@@ -165,6 +162,68 @@ body {
 /* TABLET - ПЛАНШЕТ */
 @media screen and (min-width: 420px) and (max-width: 939px) {
 
+    /*ABOUT*/
+    .about {
+        display: grid;
+        grid-template-columns: 9.4vw [main-content-start] 1fr [main-content-end] 9.4vw;
+    }
+
+    .about-section {
+        grid-column-start: main-content-start;
+        display: grid;
+        grid-template-rows: 1fr;
+        gap: 1.5vw;
+        outline: 1px solid red;
+    }
+
+    .about-section__images {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: "about-img-group1 about-img-group2";
+        gap: 2vw;
+    }
+
+    .about-img-group1 {
+        grid-area: about-img-group1;
+        display: grid;
+        grid-template-rows: max-content;
+        gap: 2vw;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .about-img-group2 {
+        grid-area: about-img-group2;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .about-img1 {
+        width: 40vw;
+        height: 38vw;
+    }
+
+    .about-img3 {
+        width: 40vw;
+    }
+
+    .about-img2 {
+        width: 40vw;
+        height: 45vw;
+    }
+
+    .about-section__cards {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .about-button {
+        width: 30vw;
+        height: 6vw;
+    }
+
     /* MISSION */
 
     .mission {
@@ -205,6 +264,65 @@ body {
 
 /* SMARTPHONE - СМАРТФОН */
 @media screen and (max-width: 419px) {
+
+    /*ABOUT*/
+    .about {
+        display: grid;
+        grid-template-columns: 9.4vw [main-content-start] 1fr [main-content-end] 9.4vw;
+    }
+
+    .about-section {
+        grid-column-start: main-content-start;
+        display: grid;
+        grid-template-rows: 1fr;
+        gap: 1.5vw;
+        outline: 1px solid red;
+    }
+
+    .about-section__images {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: "about-img-group1 about-img-group2";
+        gap: 2vw;
+    }
+
+    .about-img-group1 {
+        grid-area: about-img-group1;
+        display: grid;
+        grid-template-rows: max-content;
+        gap: 2vw;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .about-img-group2 {
+        grid-area: about-img-group2;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .about-img1 {
+        width: 35vw;
+        height: 33vw;
+    }
+
+    .about-img3 {
+        width: 35vw;
+    }
+
+    .about-img2 {
+        width: 35vw;
+        height: 40vw;
+    }
+
+    .about-button {
+        width: 40vw;
+        min-height: 6vw;
+    }
+
+
 
     /* MISSION */
 
@@ -254,6 +372,33 @@ body {
 .header__link:active {
     border-top: 1px solid #333333;
     border-bottom: 1px solid #333333;
+}
+
+/*ABOUT*/
+
+.about-title {
+    font-size: 4em;
+    line-height: 64px;
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+.about-text {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 1em;
+    line-height: 25px;
+}
+
+.about-button {
+    margin-top: 20px;
+
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 12px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
 }
 
 /* MISSION */
