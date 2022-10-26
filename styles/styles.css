@@ -1,6 +1,6 @@
 body {
     display: grid;
-    grid-template: minmax(102px, max-content) 1fr minmax(417px, max-content) / 100vw;
+    grid-template: minmax(102px, max-content) 1fr minmax(417px, max-content) / 100%;
     /* Сделала большой грид страницы для хедера, мейн и футера. Хедер и футер так должны в высоту растягиваться по содержимому, что не нужно этот грид в медиазапросах менять, возможно только отступы регулировать.
     Если есть предложения, как сделать лучше - пишите! (Юля) */
     font-family: 'Roboto', 'Source Sans Pro', sans-serif;
@@ -51,7 +51,8 @@ body {
     }
 
     /* Отступы, чтобы весь контент mission выравнивался в соответствии с основными боковыми отступами сайта (Настя) */
-    .mission-title, .mission-cards {
+    .mission-title,
+    .mission-cards {
         grid-column-start: main-content-start;
     }
 
@@ -86,7 +87,7 @@ body {
         display: grid;
         grid-template-columns: 9.4vw [main-content-start] 1fr [main-content-end] 9.4vw;
     }
-    
+
     .projects-title {
         grid-column-start: main-content-start;
     }
@@ -101,35 +102,36 @@ body {
         display: grid;
         grid-template-columns: 9.4vw [main-content-start] 1fr [main-content-end] 9.4vw;
     }
-    
+
     /* Отступы, чтобы весь контент mission выравнивался в соответствии с основными боковыми отступами сайта (Настя) */
-    .mission-title, .mission-cards {
+    .mission-title,
+    .mission-cards {
         grid-column-start: main-content-start;
     }
-    
+
     .mission-cards {
         display: grid;
         grid-template-rows: repeat(2, 1fr);
     }
-    
+
     .title-text {
         font-size: 56px;
     }
-    
+
     .mission-cards__card {
         display: grid;
         grid-template-columns: 30% 70%;
     }
-    
+
     .card-value__number {
         font-size: 160px;
     }
-    
+
     .card-text {
         font-size: 20px;
         font-weight: 400;
         line-height: 28px;
-    }    
+    }
 }
 
 /* SMARTPHONE - СМАРТФОН */
@@ -141,12 +143,13 @@ body {
         display: grid;
         grid-template-columns: 9.4vw [main-content-start] 1fr [main-content-end] 9.4vw;
     }
-    
+
     /* Отступы, чтобы весь контент mission выравнивался в соответствии с основными боковыми отступами сайта (Настя) */
-    .mission-title, .mission-cards {
+    .mission-title,
+    .mission-cards {
         grid-column-start: main-content-start;
     }
-    
+
     .mission-cards {
         display: grid;
         grid-template-rows: repeat(2, 1fr);
@@ -155,16 +158,16 @@ body {
     .title-text {
         font-size: 3em;
     }
-    
+
     .card-value__number {
         display: none;
     }
-    
+
     .card-text {
-        font-size: 1em;  
+        font-size: 1em;
         font-weight: 400;
         line-height: 1.5em;
-    }    
+    }
 }
 
 /* HEADER */
@@ -196,7 +199,8 @@ body {
     cursor: pointer;
 }
 
-.card-value, .card-text__container {
+.card-value,
+.card-text__container {
     align-self: center;
 }
 
