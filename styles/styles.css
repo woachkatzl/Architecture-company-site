@@ -66,20 +66,19 @@ body {
         grid-template-rows: 1fr;
         grid-template-areas: "about-img-group1 about-img-group2";
         gap: 3vw;
+        align-items: center;
     }
 
     .about-img-group1 {
         grid-area: about-img-group1;
         display: grid;
-        grid-template-rows: max-content;
+        grid-template-rows: auto;
         gap: 3vw;
-        align-items: center;
     }
 
     .about-img-group2 {
         grid-area: about-img-group2;
         display: flex;
-        align-items: center;
     }
 
     .about-section__cards {
@@ -182,6 +181,7 @@ body {
         grid-template-rows: 1fr;
         grid-template-areas: "about-img-group1 about-img-group2";
         gap: 2vw;
+        align-items: center;
     }
 
     .about-img-group1 {
@@ -189,29 +189,28 @@ body {
         display: grid;
         grid-template-rows: max-content;
         gap: 2vw;
-        align-items: center;
-        justify-content: center;
+        justify-content: flex-end;
     }
 
     .about-img-group2 {
         grid-area: about-img-group2;
         display: flex;
-        align-items: center;
-        justify-content: center;
+        justify-content: flex-start;
+
     }
 
     .about-img1 {
-        width: 40vw;
-        height: 38vw;
+        width: 30vw;
+        height: 28vw;
     }
 
     .about-img3 {
-        width: 40vw;
+        width: 30vw;
     }
 
     .about-img2 {
-        width: 40vw;
-        height: 45vw;
+        width: 30vw;
+        height: 35vw;
     }
 
     .about-section__cards {
@@ -319,10 +318,8 @@ body {
 
     .about-button {
         width: 40vw;
-        min-height: 6vw;
+        min-height: 8vw;
     }
-
-
 
     /* MISSION */
 
