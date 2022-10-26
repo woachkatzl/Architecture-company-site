@@ -1,6 +1,6 @@
 body {
-    display: grid;
-    grid-template: minmax(102px, max-content) 1fr minmax(417px, max-content) / 100%;
+    /* display: grid;
+    grid-template: minmax(102px, max-content) 1fr minmax(417px, max-content) / 100%; */
     /* Сделала большой грид страницы для хедера, мейн и футера. Хедер и футер так должны в высоту растягиваться по содержимому, что не нужно этот грид в медиазапросах менять, возможно только отступы регулировать.
     Если есть предложения, как сделать лучше - пишите! (Юля) */
     font-family: 'Roboto', 'Source Sans Pro', sans-serif;
@@ -17,7 +17,7 @@ body {
 
     .header {
         display: grid;
-        grid-template-columns: 9.4vw [header-logo-start] minmax(300px, 400px) [header-menu-start] 1fr;
+        grid-template-columns: 9.4vw [header-logo-start] minmax(300px, 28%) [header-menu-start] 1fr;
         align-items: center;
     }
 
@@ -56,7 +56,6 @@ body {
     .about-section {
         display: grid;
         grid-template-columns: 55% 1fr;
-        outline: 1px solid red;
         gap: 3vw;
     }
 
