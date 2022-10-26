@@ -24,6 +24,10 @@ body {
 
     .header__logo {
         grid-column-start: header-logo-start;
+        height: 100%;
+        background-image: url(../images/header-logo.svg);
+        background-repeat: no-repeat;
+        background-position: left center;
     }
 
     .header__menu {
@@ -167,7 +171,9 @@ body {
     }
 
     .footer__logo {
-        justify-self: center;
+        background-image: url(../images/footer-logo.svg);
+        background-repeat: no-repeat;
+        background-position: center top;
     }
 
     .footer-content {
@@ -181,19 +187,10 @@ body {
         display: flex;
     }
 
-    .footer__address-icon {
-        margin-right: 19px;
-    }
-
     .footer__phone {
         grid-area: footer-phone-start / footer-contact-start / footer-phone-end / footer-contact-end;
         display: flex;
         align-items: center;
-    }
-
-    .footer__phone-icon,
-    .footer__email-icon {
-        margin-right: 14px;
     }
 
     .footer__social {
@@ -485,6 +482,15 @@ body {
 .footer {
     color: #FFFFFF;
     background-color: #2C2C2C;
+}
+
+.footer__address-icon {
+    margin-right: 19px;
+}
+
+.footer__phone-icon,
+.footer__email-icon {
+    margin-right: 14px;
 }
 
 .footer__title {
