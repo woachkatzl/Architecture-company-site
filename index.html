@@ -13,6 +13,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Source+Sans+Pro:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        .footer__logo {
+            border: 1px solid red;
+        }
+    </style>
 </head>
 
 <body>
@@ -21,11 +26,12 @@
             <use xlink:href="images/sprite.svg#header-logo"></use>
         </svg>
         <nav class="header__menu">
-            <a href="index.html" class="header__link">main</a>
-            <a href="gallery.html" class="header__link">gallery</a>
-            <a href="projects.html" class="header__link">projects</a>
-            <a href="certification.html" class="header__link">certifications</a>
-            <a href="contacts.html" class="header__link">contacts</a>
+            <!-- Нужно обязательно проверить, чтобы названия ссылок совпадали с названиями файлов страниц, когда сделаем их -->
+            <a href="index.html" class="header__link">Main</a>
+            <a href="gallery.html" class="header__link">Gallery</a>
+            <a href="projects.html" class="header__link">Projects</a>
+            <a href="certification.html" class="header__link">Certifications</a>
+            <a href="contacts.html" class="header__link">Contacts</a>
         </nav>
     </header>
     <main class="main"></main>
@@ -80,7 +86,65 @@
     </div>
 
     <div class="contact"></div>
-    <footer class="footer"></footer>
+    <footer class="footer">
+        <svg class="footer__logo" width="145px" height="94px">
+            <use xlink:href="images/sprite.svg#footer-logo"></use>
+        </svg>
+        <div class="footer-content">
+            <p class="footer__title">Information</p>
+            <p class="footer__title">Contacts</p>
+            <p class="footer__title">Social Media</p>
+            <a href="index.html" class="footer__link">Main</a>
+            <a href="gallery.html" class="footer__link">Gallery</a>
+            <a href="projects.html" class="footer__link">Projects</a>
+            <a href="certification.html" class="footer__link">Certifications</a>
+            <a href="contacts.html" class="footer__link">Contacts</a>
+            <div class="footer__address">
+                <svg class="footer__address-icon" width="11px" height="16px">
+                    <use xlink:href="images/sprite.svg#footer-location"></use>
+                </svg>
+                <p class="footer__text">1234 Sample Street <br>
+                    Austin Texas 78704</p>
+            </div>
+            <div class="footer__phone">
+                <svg class="footer__phone-icon" width="17px" height="16px">
+                    <use xlink:href="images/sprite.svg#footer-phone"></use>
+                </svg>
+                <a href="tel:+75123332222" class="footer__link">512.333.2222</a>
+            </div>
+            <div class="footer__email">
+                <svg class="footer__email-icon" width="16px" height="11px">
+                    <use xlink:href="images/sprite.svg#footer-email"></use>
+                </svg>
+                <a href="mailto:sampleemail@gmail.com" class="footer__link">sampleemail@gmail.com</a>
+            </div>
+            <div class="footer__social">
+                <a href="facebook-link" class="footer__social-link">
+                    <svg width="10px" height="19px">
+                        <use xlink:href="images/sprite.svg#footer-fb"></use>
+                    </svg>
+                </a>
+                <a href="twitter-link" class="footer__social-link">
+                    <svg width="22px" height="17px">
+                        <use xlink:href="images/sprite.svg#footer-tw"></use>
+                    </svg>
+                </a>
+                <a href="linkedin-link" class="footer__social-link">
+                    <svg width="20px" height="20px">
+                        <use xlink:href="images/sprite.svg#footer-li"></use>
+                    </svg>
+                </a>
+                <a href="pinterest-link" class="footer__social-link">
+                    <svg width="14px" height="19px">
+                        <use xlink:href="images/sprite.svg#footer-pin"></use>
+                    </svg>
+                </a>
+            </div>
+        </div>
+        <div class="footer__copyright">
+            <p>© 2021 All Rights Reserved</p>
+        </div>
+    </footer>
 </body>
 
 </html>

@@ -19,6 +19,7 @@ body {
         display: grid;
         grid-template-columns: 9.4vw [header-logo-start] minmax(300px, 28%) [header-menu-start] 1fr;
         align-items: center;
+        min-height: 102px;
     }
 
     .header__logo {
@@ -154,6 +155,61 @@ body {
 
     .projects-title {
         grid-column-start: main-content-start;
+    }
+
+    /* FOOTER */
+    .footer {
+        display: grid;
+        grid-template-rows: 300px 70px;
+        grid-template-columns: [footer-start] 25% [footer-content-start] 1fr [footer-end];
+        align-content: start;
+        padding-top: 58px;
+    }
+
+    .footer__logo {
+        justify-self: center;
+    }
+
+    .footer-content {
+        display: grid;
+        grid-template-rows: 45px [footer-address-start footer-social-start] 40px 40px [footer-address-end footer-phone-start] 40px 40px [footer-phone-end] 40px [footer-social-end];
+        grid-template-columns: 24% [footer-contact-start] 1fr [footer-contact-end footer-social-start] 1fr [footer-social-end];
+    }
+
+    .footer__address {
+        grid-area: footer-address-start / footer-contact-start / footer-address-end / footer-contact-end;
+        display: flex;
+    }
+
+    .footer__address-icon {
+        margin-right: 19px;
+    }
+
+    .footer__phone {
+        grid-area: footer-phone-start / footer-contact-start / footer-phone-end / footer-contact-end;
+        display: flex;
+        align-items: center;
+    }
+
+    .footer__phone-icon,
+    .footer__email-icon {
+        margin-right: 14px;
+    }
+
+    .footer__social {
+        grid-area: footer-social-start / footer-social-start / footer-social-end / footer-social-end;
+    }
+
+    .footer__social-link {
+        margin-right: 40px;
+    }
+
+    .footer__copyright {
+        grid-column-start: footer-start;
+        grid-column-end: footer-end;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 }
 
@@ -424,7 +480,45 @@ body {
 
 /* PROJECTS */
 
+
+/* FOOTER */
+.footer {
+    color: #FFFFFF;
+    background-color: #2C2C2C;
+}
+
+.footer__title {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.footer__link,
+.footer__text {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    color: #FFFFFF;
+}
+
+.footer__copyright {
+    text-align: center;
+    font-size: 12px;
+    line-height: 22px;
+    color: #FFFFFF;
+    border-top: 1px solid #FFFFFF;
+    opacity: 0.1;
+}
+
+.footer__link:hover {
+    text-decoration: underline;
+}
+
 /* GENERAL */
 a {
     text-decoration: none;
+}
+
+p {
+    margin: 0;
 }
