@@ -56,9 +56,6 @@ body {
 
     .about-section {
         grid-column-start: main-content-start;
-    }
-
-    .about-section {
         display: grid;
         grid-template-columns: 55% 1fr;
         gap: 3vw;
@@ -109,9 +106,6 @@ body {
         height: 12%;
     }
 
-
-
-
     /* MISSION */
 
     .mission {
@@ -160,6 +154,67 @@ body {
     .projects-title {
         grid-column-start: main-content-start;
     }
+
+    /*CONTACT*/
+    .contact {
+        display: grid;
+        grid-template-columns: 9.4vw [main-content-start] 1fr [main-content-end] 9.4vw;
+    }
+
+    .contact-title {
+        grid-column-start: main-content-start;
+    }
+
+    .contact-section {
+        grid-column-start: main-content-start;
+    }
+
+    .contact-section {
+        display: grid;
+        grid-template-columns: 35% 1fr;
+        grid-template-rows: 1fr 120px;
+        margin-bottom: 120px;
+    }
+
+    #contact-section__form {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .form-input {
+        width: 95%;
+        height: 12%;
+        background: #F3F3F3;
+        border: none;
+    }
+
+    .form-textarea {
+        width: 95%;
+        height: 147px;
+        background: #F3F3F3;
+        border: none;
+    }
+
+    .contact-images {
+        width: 100%;
+        height: 100%;
+    }
+
+    .contact-section__btn {
+        display: flex;
+        align-items: flex-end;
+    }
+
+    .contact-button {
+        width: 50%;
+        min-height: 50%;
+        background-color: #2C2C2C;
+        color: #FFFFFF;
+        cursor: pointer;
+    }
+
+
 
     /* FOOTER */
     .footer {
@@ -224,7 +279,6 @@ body {
         display: grid;
         grid-template-rows: 1fr;
         gap: 1.5vw;
-        outline: 1px solid red;
     }
 
     .about-section__images {
@@ -327,7 +381,6 @@ body {
         display: grid;
         grid-template-rows: 1fr;
         gap: 1.5vw;
-        outline: 1px solid red;
     }
 
     .about-section__images {
@@ -439,15 +492,15 @@ body {
     line-height: 25px;
 }
 
-.about-button {
+.button-btn {
     margin-top: 20px;
-
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
     font-size: 12px;
     line-height: 12px;
     letter-spacing: 0.2em;
     text-transform: uppercase;
+    border: none;
 }
 
 /* MISSION */
@@ -476,6 +529,19 @@ body {
 }
 
 /* PROJECTS */
+
+/*CONTACT*/
+::-webkit-input-placeholder {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.04em;
+    padding-left: 21px;
+    padding-top: 10px;
+    color: #8D8D8D;
+}
 
 
 /* FOOTER */

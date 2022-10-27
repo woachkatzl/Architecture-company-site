@@ -33,18 +33,18 @@
         <section class="about-section">
             <div class="about-section__images">
                 <div class="about-img-group1">
-                    <img class="about-img1" src="pictures/section_about_img1.png" alt="section_about_img1">
-                    <img class="about-img3" src="pictures/section_about_img3.png" alt="section_about_img3">
+                    <img class="about-img1" src="pictures/section_about_img1.png" alt="section_about_img1" />
+                    <img class="about-img3" src="pictures/section_about_img3.png" alt="section_about_img3" />
                 </div>
                 <div class="about-img-group2">
-                    <img class="about-img2" src="pictures/section_about_img2.png" alt="section_about_img2">
+                    <img class="about-img2" src="pictures/section_about_img2.png" alt="section_about_img2" />
                 </div>
             </div>
             <div class="about-section__cards">
                 <h2 class="about-title title-text"> About</h2>
                 <span class="about-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</span> <br>
-                <button class="about-button">Read More <i class="fa fa-long-arrow-right"></i></button>
-            </div>
+                <button class="button-btn about-button">Read More <i class="fa fa-long-arrow-right"></i></button>
+                </div>
         </section>
     </div>
 
@@ -78,7 +78,26 @@
         <h2 class="projects-title title-text">Our Projects</h2>
     </div>
 
-    <div class="contact"></div>
+    <div class="contact">
+        <h2 class="contact-title title-text"> Contact Us</h2>
+        <section class="contact-section">
+            <form id="contact-section__form">
+                <input type="text" name="name" placeholder="Name" class="form-input" />
+                <input type="text" name="phone" placeholder="Phone Number*" class="form-input" required />
+                <input type="email" name="email" placeholder="E-mail*"  class="form-input" required />
+                <input type="text" name="interested_in" placeholder="Interested In"  class="form-input" />
+                <textarea name="message" placeholder="Message*" class="form-textarea" required></textarea>
+            </form>
+            <div class="contact-section__img">
+                <img src="pictures/contact_img.png" alt="contact_img" class="contact-images" />
+            </div>
+            <div class="contact-section__btn">
+                <button class="button-btn contact-button" form="contact-section__form">Send Email <i class="fa fa-long-arrow-right"></i></button>
+            </div>
+        </section>
+        
+    </div>
+
     <footer class="footer">
         <div class="footer__logo"></div>
         <div class="footer-content">
