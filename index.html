@@ -11,7 +11,9 @@
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Source+Sans+Pro:wght@400;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Source+Sans+Pro:wght@400;700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
@@ -27,8 +29,10 @@
             <a href="contacts.html" class="header__link">Contacts</a>
         </nav>
     </header>
+
     <main class="main"></main>
     <div class="intro"></div>
+
     <div class="about">
         <section class="about-section">
             <div class="about-section__images">
@@ -42,9 +46,13 @@
             </div>
             <div class="about-section__cards">
                 <h2 class="about-title title-text"> About</h2>
-                <span class="about-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</span> <br>
+                <span class="about-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
+                    printer took a galley of type and scrambled it to make a type specimen book. It has survived not
+                    only five centuries, but also the leap into electronic typesetting, remaining essentially
+                    unchanged.</span> <br>
                 <button class="button-btn about-button">Read More <i class="fa fa-long-arrow-right"></i></button>
-                </div>
+            </div>
         </section>
     </div>
 
@@ -76,6 +84,19 @@
 
     <div class="projects">
         <h2 class="projects-title title-text">Our Projects</h2>
+        <section class="projects-container">
+            <div class="projects-images">
+                <img src="pictures/first-project.png" alt="one" class="projects-images__image-one">
+                <img src="pictures/second-project.png" alt="two" class="projects-images__image-two">
+                <img src="pictures/third-project.png" alt="three" class="projects-images__image-three">
+                <img src="pictures/forth-project.png" alt="four" class="projects-images__image-four">
+                <img src="pictures/fifth-project.png" alt="five" class="projects-images__image-five">
+            </div>
+
+            <div class="projects-section__btn">
+                <button class="button-btn projects-button">All Projects <i class="fa fa-long-arrow-right"></i></button>
+            </div>
+        </section>
     </div>
 
     <div class="contact">
@@ -84,18 +105,18 @@
             <form id="contact-section__form">
                 <input type="text" name="name" placeholder="Name" class="form-input" />
                 <input type="text" name="phone" placeholder="Phone Number*" class="form-input" required />
-                <input type="email" name="email" placeholder="E-mail*"  class="form-input" required />
-                <input type="text" name="interested_in" placeholder="Interested In"  class="form-input" />
+                <input type="email" name="email" placeholder="E-mail*" class="form-input" required />
+                <input type="text" name="interested_in" placeholder="Interested In" class="form-input" />
                 <textarea name="message" placeholder="Message*" class="form-textarea" required></textarea>
             </form>
             <div class="contact-section__img">
                 <img src="pictures/contact_img.png" alt="contact_img" class="contact-images" />
             </div>
             <div class="contact-section__btn">
-                <button class="button-btn contact-button" form="contact-section__form">Send Email <i class="fa fa-long-arrow-right"></i></button>
+                <button class="button-btn contact-button" form="contact-section__form">Send Email <i
+                        class="fa fa-long-arrow-right"></i></button>
             </div>
         </section>
-        
     </div>
 
     <footer class="footer">
