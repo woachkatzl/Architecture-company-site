@@ -33,30 +33,32 @@
     <main class="main"></main>
     <div class="intro"></div>
 
-    <div class="about">
-        <section class="about-section">
-            <div class="about-section__images">
-                <div class="about-img-group1">
-                    <img class="about-img1" src="pictures/section_about_img1.png" alt="section_about_img1" />
-                    <img class="about-img3" src="pictures/section_about_img3.png" alt="section_about_img3" />
+    <section class="about">
+        <div class="about__content">
+            <div class="about__images">
+                <div class="about__images-group1">
+                    <img class="about__images-group1_img1" src="pictures/section_about_img1.png" alt="section_about_img1">
+                    <img class="about__images-group1_img3" src="pictures/section_about_img3.png" alt="section_about_img3">
                 </div>
-                <div class="about-img-group2">
-                    <img class="about-img2" src="pictures/section_about_img2.png" alt="section_about_img2" />
+                <div class="about__images-group2">
+                    <img class="about__images-group1_img2" src="pictures/section_about_img2.png" alt="section_about_img2">
                 </div>
             </div>
-            <div class="about-section__cards">
-                <h2 class="about-title title-text"> About</h2>
-                <span class="about-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+            <div class="about__card">
+                <h2 class="about__title title-text"> About</h2>
+                <span class="about__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                     Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
                     printer took a galley of type and scrambled it to make a type specimen book. It has survived not
                     only five centuries, but also the leap into electronic typesetting, remaining essentially
                     unchanged.</span> 
-                <p class="about-link">
-                    <a href="#" class="button-btn about-link__btn">Read More <i class="fa fa-long-arrow-right"></i></a>
+                <p class="about__link">
+                    <a href="#" class="button-btn about__link-btn">Read More 
+                        <i class="fa fa-long-arrow-right"></i>
+                    </a>
                 </p>
             </div>
-        </section>
-    </div>
+        </div>
+    </section>
 
     <div class="mission">
         <h2 class="mission-title title-text">Main Focus/Mission Statement</h2>
@@ -101,25 +103,26 @@
         </section>
     </div>
 
-    <div class="contact">
-        <h2 class="contact-title title-text"> Contact Us</h2>
-        <section class="contact-section">
-            <form id="contact-section__form">
-                <input type="text" name="name" placeholder="Name" class="form-input" />
-                <input type="text" name="phone" placeholder="Phone Number*" class="form-input" required />
-                <input type="email" name="email" placeholder="E-mail*" class="form-input" required />
-                <input type="text" name="interested_in" placeholder="Interested In" class="form-input" />
-                <textarea name="message" placeholder="Message*" class="form-textarea" required></textarea>
+    <section class="contact">
+        <h2 class="contact__title title-text"> Contact Us</h2>
+        <div class="contact__content">
+            <form id="contact__form">
+                <input type="text" name="name" placeholder="Name" class="contact__input">
+                <input type="text" name="phone" placeholder="Phone Number*" class="contact__input" required>
+                <input type="email" name="email" placeholder="E-mail*" class="contact__input" required>
+                <input type="text" name="interested_in" placeholder="Interested In" class="contact__input">
+                <textarea name="message" placeholder="Message*" class="contact__textarea" required></textarea>
             </form>
-            <div class="contact-section__img">
-                <img src="pictures/contact_img.png" alt="contact_img" class="contact-images" />
+            <div class="contact__images">
+                <img src="pictures/contact_img.png" alt="contact_img" class="contact__background">
             </div>
-            <div class="contact-section__btn">
-                <button class="button-btn contact-button" form="contact-section__form">Send Email <i
-                        class="fa fa-long-arrow-right"></i></button>
+            <div class="contact__button">
+                <button class="button-btn contact-button" form="contact__form">Send Email 
+                    <i class="fa fa-long-arrow-right"></i>
+                </button>
             </div>
-        </section>
-    </div>
+        </div>
+    </section>
 
     <footer class="footer">
         <div class="footer__logo"></div>
