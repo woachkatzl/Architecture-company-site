@@ -4,7 +4,6 @@ body {
     /* Сделала большой грид страницы для хедера, мейн и футера. Хедер и футер так должны в высоту растягиваться по содержимому, что не нужно этот грид в медиазапросах менять, возможно только отступы регулировать.
     Если есть предложения, как сделать лучше - пишите! (Юля) */
     font-family: 'Roboto', 'Source Sans Pro', sans-serif;
-
     max-width: 100%;
     /* Обозначила ширину, так как был скролл по оси у (Настя) */
 }
@@ -466,6 +465,62 @@ body {
     .contact-button {
         min-width: 25%;
         min-height: 50%;
+    }
+
+    /* FOOTER */
+    .footer {
+        display: grid;
+        grid-template-rows: 150px [footer-content-start] 1fr [footer-content-end] 70px;
+        /* grid-template-columns: [footer-start] minmax(165px, 25%) [footer-content-start] 1fr [footer-end]; */
+        align-content: start;
+        padding-top: 58px;
+    }
+
+    .footer__logo {
+        background-image: url(../images/footer-logo.svg);
+        background-repeat: no-repeat;
+        background-position: center top;
+        /* min-width: 165px; */
+    }
+
+    .footer-content {
+        grid-area: footer-content-start / 1 / footer-content-end / 2;
+        display: grid;
+        grid-template-rows: 45px [footer-address-start] 40px 40px [footer-address-end footer-phone-start] 40px 40px [footer-phone-end] 70px [footer-btm-title-start] 45px [footer-btm-title-end footer-social-start] 68px [footer-social-end];
+        grid-template-columns: [footer-social-start] minmax(max-content, 60%) [footer-contact-start] minmax(max-content, 1fr) [footer-contact-end footer-social-end];
+        padding-left: 9.4vw;
+        padding-right: 9.4vw;
+    }
+
+    .footer__address {
+        grid-area: footer-address-start / footer-contact-start / footer-address-end / footer-contact-end;
+        display: flex;
+    }
+
+    .footer__phone {
+        grid-area: footer-phone-start / footer-contact-start / footer-phone-end / footer-contact-end;
+        display: flex;
+        align-items: center;
+    }
+
+    .footer__title--lower {
+        grid-area: footer-btm-title-start / footer-social-start / footer-btm-title-end / footer-social-end;
+        justify-self: center;
+    }
+
+    .footer__social {
+        grid-column-start: footer-social-start;
+        grid-column-end: footer-social-end;
+        display: flex;
+        justify-self: center;
+        justify-content: space-between;
+        width: 186px;
+    }
+
+    .footer__copyright {
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 }
 
