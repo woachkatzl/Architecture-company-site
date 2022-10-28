@@ -83,7 +83,7 @@ body {
     }
 
     .about-section__cards {
-        width: 85%;
+        width: 90%;
     }
 
     .about-img1 {
@@ -101,10 +101,10 @@ body {
         height: 25vw;
     }
 
-    .about-button {
-        width: 50%;
-        height: 12%;
+    .about-link__btn {
+        padding: 1.3vw 3vw;
     }
+
 
     /* MISSION */
 
@@ -166,8 +166,8 @@ body {
         grid-template-rows: repeat(2, 1fr);
         grid-template-columns: 1fr;
         grid-template-areas: "one two"
-                            "three four five";
-    
+            "three four five";
+
     }
 
     .projects-images__image-one {
@@ -231,18 +231,9 @@ body {
         gap: 10px;
     }
 
-    .form-input {
-        width: 95%;
-        height: 12%;
-        background: #F3F3F3;
-        border: none;
-    }
-
+    .form-input,
     .form-textarea {
         width: 95%;
-        height: 147px;
-        background: #F3F3F3;
-        border: none;
     }
 
     .contact-images {
@@ -255,13 +246,6 @@ body {
         align-items: flex-end;
     }
 
-    .contact-button {
-        width: 50%;
-        min-height: 50%;
-        background-color: #2C2C2C;
-        color: #FFFFFF;
-        cursor: pointer;
-    }
 
     /* FOOTER */
     .footer {
@@ -369,11 +353,11 @@ body {
     .about-section__cards {
         width: 100%;
         margin-right: 0;
+        text-align: center;
     }
 
-    .about-button {
-        width: 30vw;
-        height: 6vw;
+    .about-link__btn {
+        padding: 15px 3vw;
     }
 
     /* MISSION */
@@ -412,7 +396,47 @@ body {
         font-weight: 400;
         line-height: 28px;
     }
+
+
+    /*CONTACT*/
+    .contact-section__img {
+        display: none;
+    }
+
+    .contact {
+        display: grid;
+        grid-template-columns: 9.4vw [main-content-start] 1fr [main-content-end] 9.4vw;
+    }
+
+    .contact-title,
+    .contact-section {
+        grid-column-start: main-content-start;
+    }
+
+    .contact-section {
+        display: grid;
+        grid-template-rows: 1fr 100px;
+        margin-bottom: 60px;
+    }
+
+    #contact-section__form {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .form-input,
+    .form-textarea {
+        width: 60%;
+    }
+
+    .contact-section__btn {
+        display: flex;
+        align-items: flex-end;
+    }
 }
+
+
 
 /* SMARTPHONE - СМАРТФОН */
 @media screen and (max-width: 419px) {
@@ -468,9 +492,14 @@ body {
         height: 40vw;
     }
 
-    .about-button {
-        width: 40vw;
-        min-height: 8vw;
+    .about-section__cards {
+        width: 100%;
+        margin-right: 0;
+        text-align: center;
+    }
+
+    .about-link__btn {
+        padding: 15px 3vw;
     }
 
     /* MISSION */
@@ -504,6 +533,45 @@ body {
         font-weight: 400;
         line-height: 1.5em;
     }
+
+    /*CONTACT*/
+    .contact-section__img {
+        display: none;
+    }
+
+    .contact {
+        display: grid;
+        grid-template-columns: 9.4vw [main-content-start] 1fr [main-content-end] 9.4vw;
+    }
+
+    .contact-title,
+    .contact-section {
+        grid-column-start: main-content-start;
+    }
+
+    .contact-section {
+        display: grid;
+        grid-template-rows: 1fr 100px;
+        margin-bottom: 60px;
+    }
+
+    #contact-section__form {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .form-input,
+    .form-textarea {
+        width: 100%;
+    }
+
+    .contact-section__btn {
+        display: flex;
+        align-items: flex-end;
+    }
+
+
 }
 
 /* HEADER */
@@ -550,6 +618,16 @@ body {
     border: none;
 }
 
+.about-link {
+    margin-top: 40px;
+}
+
+.about-link__btn {
+    background-color: #F2F2F2;
+    color: black;
+    margin-top: 50px;
+}
+
 /* MISSION */
 
 .title-text {
@@ -577,9 +655,7 @@ body {
 
 /* PROJECTS */
 
-.projects-button {
-
-}
+.projects-button {}
 
 /*CONTACT*/
 ::-webkit-input-placeholder {
@@ -594,6 +670,30 @@ body {
     color: #8D8D8D;
 }
 
+.contact-title {
+    font-size: 4em;
+    line-height: 64px;
+}
+
+.form-input {
+    height: 6vh;
+    background: #F3F3F3;
+    border: none;
+}
+
+.form-textarea {
+    height: 24vh;
+    background: #F3F3F3;
+    border: none;
+}
+
+.contact-button {
+    width: 50%;
+    min-height: 50%;
+    background-color: #2C2C2C;
+    color: #FFFFFF;
+    cursor: pointer;
+}
 
 /* FOOTER */
 .footer {
