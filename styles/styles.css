@@ -560,7 +560,13 @@ body {
 }
 
 .line-one__image-one {
+    opacity: 0.4;
     width: 49%;
+}
+
+.cover {
+    background-color: #333333;
+    z-index: 3;
 }
 
 .line-one__image-two {
