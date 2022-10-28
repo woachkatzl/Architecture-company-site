@@ -150,6 +150,14 @@ body {
         font-size: 0.5em;
     }
 
+    .line-one__cover {
+        position: absolute;
+        box-sizing: border-box;
+        opacity: 0.8;
+        width: 40%;
+        padding-right: 4px;
+    }
+
     /*CONTACT*/
     .contact {
         display: grid;
@@ -323,6 +331,14 @@ body {
     }
 
     /* PROJECTS */
+
+    .line-one__cover {
+        position: absolute;
+        box-sizing: border-box;
+        opacity: 0.8;
+        width: 40%;
+        max-height: 40%;
+    }
 
     /* MISSION */
 
@@ -560,13 +576,15 @@ body {
 }
 
 .line-one__image-one {
-    opacity: 0.4;
     width: 49%;
+    position: relative;
 }
 
-.cover {
-    background-color: #333333;
-    z-index: 3;
+.line-one__cover {
+    position: absolute;
+    box-sizing: border-box;
+    opacity: 0.8;
+    width: 40%;
 }
 
 .line-one__image-two {
@@ -601,6 +619,7 @@ body {
 
 .projects-button:hover,
 .line-one__image-one:hover,
+.line-one__cover:hover,
 .line-one__image-two:hover,
 .line-two__image-three:hover,
 .line-two__image-four:hover,
