@@ -114,7 +114,7 @@ body {
     }
 
     /* Отступы, чтобы весь контент mission выравнивался в соответствии с основными боковыми отступами сайта (Настя) */
-    .mission-title,
+    .mission__title,
     .mission-cards {
         grid-column-start: main-content-start;
     }
@@ -335,7 +335,7 @@ body {
     }
 
     /* Отступы, чтобы весь контент mission выравнивался в соответствии с основными боковыми отступами сайта (Настя) */
-    .mission-title,
+    .mission__title,
     .mission-cards {
         grid-column-start: main-content-start;
     }
@@ -505,7 +505,7 @@ body {
     }
 
     /* Отступы, чтобы весь контент mission выравнивался в соответствии с основными боковыми отступами сайта (Настя) */
-    .mission-title,
+    .mission__title,
     .mission-cards {
         grid-column-start: main-content-start;
     }
