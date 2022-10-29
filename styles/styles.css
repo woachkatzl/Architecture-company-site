@@ -69,22 +69,33 @@ body {
         display: inline-block;
         width: 52.95px;
         height: 53px;   
+        cursor: pointer;
         background-color: #FFFFFF;
         border: 1px solid #F2F2F2;
     }
+
+    .intro-button1:active {
+        background-color: #C4C4C4;      
+    }
+
     
     .intro-button2 {
         display: inline-block;
         width: 52.95px;
         height: 53px;  
+        cursor: pointer;
         margin-left: 1.5vw;
         background-color: #f9f9f9;
         border: 1px solid #F2F2F2;
     }
 
+    .intro-button2:active {
+        background-color: #C4C4C4;      
+    }
+
     .intro__slidenumbers {
         display: grid;
-        padding-top: 15vh;
+        padding-top: 10vh;
     }
     
     .intro__image {
@@ -104,10 +115,19 @@ body {
         top: 1340px;
         width: 221.81px;
         height: 71px; 
+        cursor: pointer;
+        font-size: small;
+        letter-spacing: 3px;
+        text-align: center;
+        color: #333333;
         background-color: #FFFFFF;
         border: none;
     }
     
+    .intro-button3:hover {
+        background-color: #F2F2F2;      
+    }
+
     .intro-text {
         font-weight: bold;
         color: #333333;
