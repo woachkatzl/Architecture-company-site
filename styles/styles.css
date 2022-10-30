@@ -394,10 +394,9 @@ body {
     }
 
     .intro__projectlorum {
-        display: flex; 
-        justify-content: center;
-        border: 1px solid #2C2C2C;
+        text-align: center;
     }
+    
     .intro__buttons {
         display: flex;
         justify-content: center;
@@ -437,7 +436,7 @@ body {
 
     .intro__image {
         display: grid;
-     }
+    }
 
     .intro-img1 {
         width: 100%;
@@ -728,7 +727,7 @@ body {
         display: grid;
         grid-template-columns: 9.4vw [intro-content-start] 1fr [intro-content-end] 9.4vw;
         margin-bottom: 10vh;
-      }
+    }
 
     .intro__content,
     .intro__image {
@@ -736,9 +735,9 @@ body {
     }
 
     .intro__projectlorum {
-        display: grid;
-        justify-items: center;
-        }
+        text-align: center;
+    }
+
     .intro__buttons {
         display: flex;
         justify-content: center;
@@ -778,7 +777,7 @@ body {
 
     .intro__image {
         display: grid;
-     }
+    }
 
     .intro-img1 {
         width: 100%;
@@ -786,7 +785,7 @@ body {
 
     .intro-button3 {
         position: absolute;
-        top: 100%;
+        top: 135%;
         width: 180px;
         height: 60px;
         cursor: pointer;
