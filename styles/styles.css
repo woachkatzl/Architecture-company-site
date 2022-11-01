@@ -204,6 +204,12 @@ body {
         grid-column-start: main-content-start;
     }
 
+    .mission__title {
+        display: flex;
+        font-size: 4em;
+        line-height: 64px;
+    }
+
     .mission-cards {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -211,7 +217,7 @@ body {
     }
 
     .title-text {
-        font-size: 56px;
+        font-size: 58px;
     }
 
     .mission-cards__card {
@@ -230,6 +236,11 @@ body {
     }
 
     /* PROJECTS */
+
+    .projects__title {
+        font-size: 4em;
+        line-height: 64px;
+    }
 
     .projects__images {
         display: grid;
@@ -613,13 +624,16 @@ body {
         grid-column-start: main-content-start;
     }
 
+    .mission__title {
+        display: block;
+
+        font-size: 4em;
+        line-height: 64px;
+    }
+
     .mission-cards {
         display: grid;
         grid-template-rows: repeat(2, 1fr);
-    }
-
-    .title-text {
-        font-size: 56px;
     }
 
     .mission-cards__card {
@@ -638,6 +652,11 @@ body {
     }
 
     /* PROJECTS */
+
+    .projects__title {
+        font-size: 4em;
+        line-height: 64px;
+    }
 
     .projects__images {
         display: grid;
@@ -954,13 +973,13 @@ body {
         grid-column-start: main-content-start;
     }
 
+    .mission__title {
+        font-size: 2em;
+    }
+
     .mission-cards {
         display: grid;
         grid-template-rows: repeat(2, 1fr);
-    }
-
-    .title-text {
-        font-size: 3em;
     }
 
     .card-value__number {
@@ -974,6 +993,10 @@ body {
     }
 
     /* PROJECTS */
+
+    .projects__title {
+        font-size: 2em;
+    }
 
     .projects__images {
         display: flex;
@@ -1223,11 +1246,6 @@ body {
 
 /* MISSION */
 
-.mission__title {
-    font-size: 4em;
-    line-height: 64px;
-}
-
 .title-text {
     font-weight: 300;
     color: #BDBDBD;
@@ -1261,11 +1279,6 @@ body {
 .projects__title,
 .projects__container {
     grid-column-start: main-content-start;
-}
-
-.projects__title {
-    font-size: 4em;
-    line-height: 64px;
 }
 
 .projects__container {
