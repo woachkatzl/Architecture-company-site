@@ -21,20 +21,21 @@ body {
         min-height: 102px;
     }
 
-    .header__logo {
-        grid-column-start: header-logo-start;
-        height: 100%;
-        background-image: url(../images/header-logo.svg);
-        background-repeat: no-repeat;
-        background-position: left center;
-    }
-
     .header__menu {
         grid-column-start: header-menu-start;
         display: flex;
         justify-content: space-between;
         max-width: 645px;
         min-width: max-content;
+    }
+
+    .header__menu--narrow {
+        display: none;
+    }
+
+    .header__link {
+        border: 1px solid #FFFFFF;
+        /* Добавила здесь border чтобы ссылки не прыгали при наведении курсора. Потому что при наведении появляется оформление border снизу и сверху (Юля) */
     }
 
     /* MAIN */
@@ -63,7 +64,7 @@ body {
         display: grid;
         padding-top: 33vh;
         padding-bottom: 5vh;
-    } 
+    }
 
     .intro-button1 {
         display: inline-block;
@@ -111,7 +112,7 @@ body {
 
     .intro-button3 {
         position: absolute;
-        top: 860px;              
+        top: 860px;
         width: 221.81px;
         height: 71px;
         cursor: pointer;
@@ -380,6 +381,65 @@ body {
 /* TABLET - ПЛАНШЕТ */
 @media screen and (min-width: 420px) and (max-width: 939px) {
 
+    /* HEADER */
+
+    .header {
+        display: grid;
+        grid-template-columns: 9.4vw [header-logo-start] minmax(300px, 28%) [header-menu-start] 1fr 9.4vw;
+        align-items: center;
+        min-height: 102px;
+    }
+
+    .header__menu {
+        display: none;
+    }
+
+    .header__menu--narrow {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .header__title {
+        margin-right: 30px;
+    }
+
+    .header__menu-btn {
+        width: 44px;
+        height: 44px;
+        background: linear-gradient(to bottom,
+                #000, #000 20%,
+                white 20%, white 40%,
+                #000 40%, #000 60%,
+                white 60%, white 80%,
+                #000 80%, #000 100%);
+    }
+
+    .header__hidden-menu {
+        position: fixed;
+        top: 0;
+        right: -350px;
+        display: block;
+        width: 300px;
+        height: 100%;
+        background: #F2F2F2;
+        transition: 0.9s;
+    }
+
+    .header__links-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        height: 50vh;
+    }
+
+    .header__hidden-link {
+        list-style-type: none;
+    }
+
+    .header__click:checked+.header__menu-btn .header__hidden-menu {
+        right: 0;
+    }
+
     /*INTRO*/
 
     .intro {
@@ -396,7 +456,7 @@ body {
     .intro__projectlorum {
         text-align: center;
     }
-    
+
     .intro__buttons {
         display: flex;
         justify-content: center;
@@ -1081,14 +1141,27 @@ body {
 }
 
 /* HEADER */
-.header__link {
+
+.header__click {
+    display: none;
+}
+
+.header__logo {
+    grid-column-start: header-logo-start;
+    height: 100%;
+    background-image: url(../images/header-logo.svg);
+    background-repeat: no-repeat;
+    background-position: left center;
+}
+
+.header__link,
+.header__title {
     font-size: 12px;
+    font-weight: 400;
     line-height: 18px;
     letter-spacing: 0.2em;
     text-transform: uppercase;
     color: #333333;
-    border: 1px solid #FFFFFF;
-    /* Добавила здесь border чтобы ссылки не прыгали при наведении курсора. Потому что при наведении появляется оформление border снизу и сверху (Юля) */
 }
 
 .header__link:hover,
