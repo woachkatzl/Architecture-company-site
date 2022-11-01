@@ -267,9 +267,23 @@ body {
         padding-right: 4px;
     }
 
-
     .line-two__image-four {
         width: 40%;
+    }
+
+    .sample-project__text {
+        position: absolute;
+        width: 40%;
+        height: 20%;
+    }
+
+    .sample-title {
+        padding-top: 7%;
+        padding-left: 10%;
+
+        color: #fff;
+        font-weight: 700;
+        font-size: 4em;
     }
 
     /*CONTACT*/
@@ -1209,6 +1223,11 @@ body {
 
 /* MISSION */
 
+.mission__title {
+    font-size: 4em;
+    line-height: 64px;
+}
+
 .title-text {
     font-weight: 300;
     color: #BDBDBD;
@@ -1242,6 +1261,11 @@ body {
 .projects__title,
 .projects__container {
     grid-column-start: main-content-start;
+}
+
+.projects__title {
+    font-size: 4em;
+    line-height: 64px;
 }
 
 .projects__container {
