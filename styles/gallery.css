@@ -1,0 +1,223 @@
+html {
+    max-width: 1600px;
+    min-width: 300px;
+    margin: 0 auto;
+}
+
+.gallery__title-one {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 4em;
+    line-height: 64px;
+    color: #BDBDBD;
+    margin: 0;
+}
+
+.gallery__title-two {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 4em;
+    line-height: 64px;
+    color: #333333;
+    margin: 0;
+    margin-bottom: 60px;
+}
+
+#carouselExampleControls {
+    display: none;
+}
+
+.gallery__slider {
+    display: grid;
+    grid-template-columns: 100px 150px;
+}
+
+.number-link__color {
+    color: #BDBDBD;
+}
+
+.number-link {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 24px;
+    color: #333333;
+}
+
+.gallery__images div,
+.carousel-item {
+    cursor: pointer;
+    background-color: black;
+    background-image: url(pictures/search_icon.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 1;
+}
+
+.gallery__images-general:hover,
+.d-block:hover {
+    opacity: 0.3;
+
+}
+
+.pager {
+    margin-bottom: 60px;
+}
+
+.pager__item {
+    display: inline;
+    text-decoration: none;
+    list-style: none;
+    border: 1px solid rgb(202, 202, 202);
+    padding: 5px 7px;
+}
+
+.pager__link {
+    color: black;
+}
+
+.pager__item-two {
+    background-color: #F2F2F2;
+    margin-left: 10px;
+}
+
+/* DESKTOP - МОНИТОР КОМПЬЮТЕРА */
+@media screen and (min-width: 940px) {
+
+    /*GALLERY*/
+
+    .gallery {
+        display: grid;
+        grid-template-columns: 9vw [main-content-start] 1fr [main-content-end] 9vw;
+    }
+
+    .gallery__title,
+    .gallery__slider {
+        grid-column-start: main-content-start;
+    }
+
+    .gallery__images {
+        grid-column-start: main-content-start;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        grid-template-rows: repeat(2, 260px);
+        gap: 20px;
+        margin-bottom: 70px;
+    }
+
+    .gallery__images-general {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+/* TABLET - ПЛАНШЕТ */
+@media screen and (min-width: 420px) and (max-width: 939px) {
+    .gallery {
+        display: grid;
+        grid-template-columns: 9vw [main-content-start] 1fr [main-content-end] 9vw;
+        position: relative;
+        margin: auto;
+    }
+
+    .gallery__title,
+    .gallery__images,
+    .gallery__slider {
+        grid-column-start: main-content-start;
+    }
+
+    .gallery__images {
+        display: none;
+    }
+
+    .gallery__title {
+        font-size: 0.7em;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .gallery__title-one {
+        text-align: end;
+        margin-right: 20px;
+    }
+
+    .gallery__title-two {
+        margin-bottom: 30px;
+    }
+
+    .gallery__slider {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 0px;
+    }
+
+    #carouselExampleControls {
+        display: block;
+    }
+
+    #carouselExampleControls {
+        grid-column-start: main-content-start;
+        width: 50%;
+        display: flex;
+        justify-self: center;
+        margin-bottom: 50px;
+    }
+
+}
+
+
+
+/* SMARTPHONE - СМАРТФОН */
+@media screen and (max-width: 419px) {
+    .gallery {
+        display: grid;
+        grid-template-columns: 9vw [main-content-start] 1fr [main-content-end] 9vw;
+        position: relative;
+        margin: auto;
+    }
+
+    .gallery__title,
+    .gallery__images,
+    .gallery__slider {
+        grid-column-start: main-content-start;
+    }
+
+    .gallery__title {
+        font-size: 0.6em;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .gallery__title-one {
+        text-align: end;
+        margin-right: 20px;
+    }
+
+    .gallery__title-two {
+        margin-bottom: 10px;
+    }
+
+    .gallery__slider {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 0px;
+    }
+
+    .gallery__images {
+        display: none;
+    }
+
+    #carouselExampleControls {
+        display: block;
+    }
+
+    #carouselExampleControls {
+        grid-column-start: main-content-start;
+        width: 100%;
+        margin-bottom: 50px;
+    }
+}
