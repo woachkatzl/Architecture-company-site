@@ -208,7 +208,7 @@ body {
 
     /* Отступы, чтобы весь контент mission выравнивался в соответствии с основными боковыми отступами сайта (Настя) */
     .mission__title,
-    .mission-cards {
+    .mission__cards {
         grid-column-start: main-content-start;
     }
 
@@ -218,7 +218,7 @@ body {
         line-height: 64px;
     }
 
-    .mission-cards {
+    .mission__cards {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         column-gap: 10%;
@@ -228,16 +228,16 @@ body {
         font-size: 58px;
     }
 
-    .mission-cards__card {
+    .mission__card {
         display: grid;
         grid-template-columns: 30% 70%;
     }
 
-    .card-value__number {
+    .mission__card-number {
         font-size: 160px;
     }
 
-    .card-text {
+    .mission__card-text {
         font-size: 20px;
         font-weight: 400;
         line-height: 28px;
@@ -256,19 +256,18 @@ body {
         gap: 5%;
     }
 
-    .projects__images-line-one,
-    .projects__images-line-two {
+    .projects__imgs-line1,
+    .projects__imgs-line2 {
         display: flex;
         justify-content: space-between;
     }
 
-    .projects-button {
-        font-size: 0.5em;
-
+    .projects__btn {
         width: 19%;
         min-height: 50%;
-        background-color: #2C2C2C;
+        font-size: 0.5em;
         color: #FFFFFF;
+        background-color: #2C2C2C;
         cursor: pointer;
     }
 
@@ -286,17 +285,17 @@ body {
         padding-right: 4px;
     }
 
-    .line-two__image-four {
+    .projects__project4 {
         width: 40%;
     }
 
-    .sample-project__text {
+    .projects__overlay {
         position: absolute;
         width: 40%;
         height: 20%;
     }
 
-    .sample-title {
+    .projects__project-name {
         padding-top: 7%;
         padding-bottom: 2%;
         padding-left: 10%;
@@ -304,8 +303,11 @@ body {
         font-size: 4em;
     }
 
-    .sample-subtitle {
+    .projects__project-link {
         font-size: 1em;
+        padding-top: 7%;
+        padding-bottom: 2%;
+        padding-left: 10%;
     }
 
     /*CONTACT*/
@@ -652,7 +654,7 @@ body {
 
     /* Отступы, чтобы весь контент mission выравнивался в соответствии с основными боковыми отступами сайта (Настя) */
     .mission__title,
-    .mission-cards {
+    .mission__cards {
         grid-column-start: main-content-start;
     }
 
@@ -663,21 +665,21 @@ body {
         line-height: 64px;
     }
 
-    .mission-cards {
+    .mission__cards {
         display: grid;
         grid-template-rows: repeat(2, 1fr);
     }
 
-    .mission-cards__card {
+    .mission__card {
         display: grid;
         grid-template-columns: 30% 70%;
     }
 
-    .card-value__number {
+    .mission__card-number {
         font-size: 160px;
     }
 
-    .card-text {
+    .mission__card-text {
         font-size: 20px;
         font-weight: 400;
         line-height: 28px;
@@ -696,8 +698,8 @@ body {
         gap: 5%;
     }
 
-    .projects__images-line-one,
-    .projects__images-line-two {
+    .projects__imgs-line1,
+    .projects__imgs-line2 {
         display: flex;
         justify-content: space-between;
     }
@@ -711,11 +713,11 @@ body {
     }
 
 
-    .line-two__image-four {
+    .projects__project4 {
         width: 40%;
     }
 
-    .projects-button {
+    .projects__btn {
         min-width: 25%;
         min-height: 57%;
         background-color: #2C2C2C;
@@ -1081,7 +1083,7 @@ body {
 
     /* Отступы, чтобы весь контент mission выравнивался в соответствии с основными боковыми отступами сайта (Настя) */
     .mission__title,
-    .mission-cards {
+    .mission__cards {
         grid-column-start: main-content-start;
     }
 
@@ -1089,16 +1091,16 @@ body {
         font-size: 2em;
     }
 
-    .mission-cards {
+    .mission__cards {
         display: grid;
         grid-template-rows: repeat(2, 1fr);
     }
 
-    .card-value__number {
+    .mission__card-number {
         display: none;
     }
 
-    .card-text {
+    .mission__card-text {
         font-size: 1em;
         font-weight: 400;
         line-height: 1.5em;
@@ -1118,19 +1120,19 @@ body {
         gap: 5%;
     }
 
-    .projects__images-line-one,
-    .projects__images-line-two {
+    .projects__imgs-line1,
+    .projects__imgs-line2 {
         display: flex;
         justify-content: center;
     }
 
-    .line-one__image-two,
-    .line-two__image-three,
-    .line-two__image-five {
+    .projects__project2,
+    .projects__project3,
+    .projects__project5 {
         display: none;
     }
 
-    .line-two__image-four {
+    .projects__project4 {
         width: 49%;
     }
 
@@ -1140,7 +1142,7 @@ body {
         justify-content: center;
     }
 
-    .projects-button {
+    .projects__btn {
         max-width: 50vw;
         min-height: 70%;
         background-color: #2C2C2C;
@@ -1359,16 +1361,16 @@ body {
     cursor: pointer;
 }
 
-.card-value,
-.card-text__container {
+.mission__card-value,
+.mission__text-container {
     align-self: center;
 }
 
-.card-value p {
+.mission__card-value p {
     margin: 0;
 }
 
-.card-value__number {
+.mission__card-number {
     color: #F2F2F2;
     font-weight: 900;
 }
@@ -1393,7 +1395,7 @@ body {
     margin-bottom: 10%;
 }
 
-.line-one__image-one {
+.projects__project1 {
     width: 49%;
     position: relative;
 }
@@ -1405,35 +1407,36 @@ body {
     width: 40%;
 }
 
-.sample-title {
+.projects__project-name {
     color: #fff;
     font-weight: 700;
 }
 
-.sample-subtitle {
+.projects__project-link {
     font-weight: 300;
     letter-spacing: 3px;
+    color: #fff;
 }
 
-.line-one__image-two {
+.projects__project2 {
     width: 48%;
 }
 
-.line-two__image-three {
+.projects__project3 {
     width: 25%;
 }
 
-.line-two__image-five {
+.projects__project5 {
     width: 30%;
 }
 
-.projects-button:hover,
-.line-one__image-one:hover,
+.projects__btn:hover,
+.projects__project1:hover,
 .line-one__cover:hover,
-.line-one__image-two:hover,
-.line-two__image-three:hover,
-.line-two__image-four:hover,
-.line-two__image-five:hover {
+.projects__project2:hover,
+.projects__project3:hover,
+.projects__project4:hover,
+.projects__project5:hover {
     cursor: pointer;
 }
 
