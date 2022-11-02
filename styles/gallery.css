@@ -51,7 +51,7 @@ html {
 .carousel-item {
     cursor: pointer;
     background-color: black;
-    background-image: url(pictures/search_icon.png);
+    background-image: url(../pictures/search_icon.png);
     background-repeat: no-repeat;
     background-position: center;
     opacity: 1;
