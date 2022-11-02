@@ -179,17 +179,17 @@ body {
         width: 90%;
     }
 
-    .about__images-group1_img1 {
+    .about___img1 {
         width: 20vw;
         height: 18vw;
     }
 
-    .about__images-group1_img3 {
+    .about__img3 {
         width: 20vw;
         height: 10vw;
     }
 
-    .about__images-group1_img2 {
+    .about__img2 {
         width: 20vw;
         height: 25vw;
     }
@@ -354,12 +354,12 @@ body {
         width: 100%;
     }
 
-    .contact__button {
+    .contact__btn-container {
         display: flex;
         align-items: flex-end;
     }
 
-    .contact-button {
+    .contact__button {
         min-width: 50%;
         min-height: 50%;
     }
@@ -619,16 +619,16 @@ body {
 
     }
 
-    .about__images-group1_img1 {
+    .about___img1 {
         width: 30vw;
         height: 28vw;
     }
 
-    .about__images-group1_img3 {
+    .about__img3 {
         width: 30vw;
     }
 
-    .about__images-group1_img2 {
+    .about__img2 {
         width: 30vw;
         height: 35vw;
     }
@@ -774,14 +774,14 @@ body {
         height: 20vh;
     }
 
-    .contact__button {
+    .contact__btn-container {
         display: flex;
         align-items: flex-end;
         width: 100%;
         justify-content: center;
     }
 
-    .contact-button {
+    .contact__button {
         min-width: 25%;
         min-height: 50%;
     }
@@ -1048,16 +1048,16 @@ body {
         justify-content: center;
     }
 
-    .about__images-group1_img1 {
+    .about___img1 {
         width: 35vw;
         height: 33vw;
     }
 
-    .about__images-group1_img3 {
+    .about__img3 {
         width: 35vw;
     }
 
-    .about__images-group1_img2 {
+    .about__img2 {
         width: 35vw;
         height: 40vw;
     }
@@ -1191,13 +1191,13 @@ body {
         height: 20vh;
     }
 
-    .contact__button {
+    .contact__btn-container {
         display: flex;
         align-items: flex-end;
         justify-content: center;
     }
 
-    .contact-button {
+    .contact__button {
         min-width: 50%;
         min-height: 50%;
     }
@@ -1470,7 +1470,7 @@ body {
     border: none;
 }
 
-.contact-button {
+.contact__button {
     background-color: #2C2C2C;
     color: #FFFFFF;
     cursor: pointer;
