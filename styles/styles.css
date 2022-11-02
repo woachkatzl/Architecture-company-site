@@ -277,14 +277,6 @@ body {
         flex-direction: row-reverse;
     }
 
-    .line-one__cover {
-        position: absolute;
-        box-sizing: border-box;
-        opacity: 0.8;
-        width: 40%;
-        padding-right: 4px;
-    }
-
     .projects__project4 {
         width: 40%;
     }
@@ -299,7 +291,6 @@ body {
         padding-top: 7%;
         padding-bottom: 2%;
         padding-left: 10%;
-
         font-size: 4em;
     }
 
@@ -704,17 +695,22 @@ body {
         justify-content: space-between;
     }
 
-    .line-one__cover {
-        position: absolute;
-        box-sizing: border-box;
-        opacity: 0.8;
-        width: 40%;
-        min-height: 11%;
-    }
-
-
     .projects__project4 {
         width: 40%;
+    }
+
+    .projects__project-name {
+        padding-top: 7%;
+        padding-bottom: 2%;
+        padding-left: 10%;
+        font-size: 2em;
+    }
+
+    .projects__project-link {
+        font-size: 0.75em;
+        padding-top: 7%;
+        padding-bottom: 2%;
+        padding-left: 10%;
     }
 
     .projects__btn {
@@ -1396,15 +1392,14 @@ body {
 }
 
 .projects__project1 {
-    width: 49%;
     position: relative;
+    width: 49%;
 }
 
-.line-one__cover {
-    position: absolute;
-    box-sizing: border-box;
-    opacity: 0.8;
-    width: 40%;
+.projects__img {
+    min-width: 100%;
+    max-width: 100%;
+    height: 100%;
 }
 
 .projects__project-name {
@@ -1418,21 +1413,45 @@ body {
     color: #fff;
 }
 
+.projects__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+}
+
+.projects__overlay:hover {
+    background-color: #333333;
+    opacity: 0.8;
+}
+
+.projects__project-link:hover {
+    text-decoration: underline;
+}
+
 .projects__project2 {
+    position: relative;
     width: 48%;
 }
 
 .projects__project3 {
+    position: relative;
     width: 25%;
 }
 
+.projects__project4 {
+    position: relative;
+}
+
 .projects__project5 {
+    position: relative;
     width: 30%;
 }
 
 .projects__btn:hover,
 .projects__project1:hover,
-.line-one__cover:hover,
 .projects__project2:hover,
 .projects__project3:hover,
 .projects__project4:hover,
