@@ -1460,6 +1460,11 @@ body {
     border: none;
 }
 
+.contact__input:focus,
+.contact__textarea:focus {
+    outline: none;
+}
+
 .contact__textarea {
     background: #F3F3F3;
     border: none;
