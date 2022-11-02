@@ -32,6 +32,9 @@
             <h2 class="header__title">Menu</h2>
             <input class="header__click" id="header__click" type="checkbox">
             <label class="header__menu-btn" for="header__click">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                </svg>                  
                 <nav class="header__hidden-menu">
                     <ul class="header__links-container">
                         <li class="header__hidden-link">
@@ -52,7 +55,7 @@
                     </ul>
                 </nav>
             </label>
-            <div class="overlay"></div>
+            <div class="header__overlay"></div>
         </div>
     </header>
 
@@ -189,7 +192,7 @@
 
     <footer class="footer">
         <div class="footer__logo"></div>
-        <div class="footer-content">
+        <div class="footer__content">
             <p class="footer__title">Information</p>
             <p class="footer__title footer__title--mid">Contacts</p>
             <p class="footer__title footer__title--lower">Social Media</p>
@@ -215,7 +218,7 @@
                 <svg class="footer__email-icon" width="16px" height="11px">
                     <use xlink:href="images/sprite.svg#footer-email"></use>
                 </svg>
-                <a href="mailto:sampleemail@gmail.com" class="footer__link">sampleemail@gmail.com</a>
+                <a class="footer__link" href="mailto:sampleemail@gmail.com">sampleemail@gmail.com</a>
             </div>
             <div class="footer__social">
                 <a class="footer__social-link" href="facebook-link">
