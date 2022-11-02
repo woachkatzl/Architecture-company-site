@@ -489,7 +489,7 @@ body {
         list-style-type: none;
     }
 
-    .header__click:checked+.header__menu-btn .header__hidden-menu {
+    .header__click:checked~.header__hidden-menu {
         visibility: visible;
         top: 102px;
     }
@@ -918,7 +918,7 @@ body {
         list-style-type: none;
     }
 
-    .header__click:checked+.header__menu-btn .header__hidden-menu {
+    .header__click:checked~.header__hidden-menu {
         visibility: visible;
         top: 102px;
     }
