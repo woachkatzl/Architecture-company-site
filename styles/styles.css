@@ -263,7 +263,6 @@ body {
     }
 
     .projects__btn {
-        margin-top: 0px;
         padding: 1.3vw 3vw;
         color: #FFFFFF;
         background-color: #2C2C2C;
@@ -271,6 +270,7 @@ body {
     }
 
     .projects__section-btn {
+        margin-top: 0px;
         display: flex;
         align-items: flex-end;
         flex-direction: row-reverse;
