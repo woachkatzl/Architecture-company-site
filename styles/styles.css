@@ -263,9 +263,8 @@ body {
     }
 
     .projects__btn {
-        width: 19%;
-        min-height: 50%;
-        font-size: 0.5em;
+        margin-top: 0px;
+        padding: 1.3vw 3vw;
         color: #FFFFFF;
         background-color: #2C2C2C;
         cursor: pointer;
@@ -717,14 +716,14 @@ body {
     }
 
     .projects__btn {
-        min-width: 25%;
-        min-height: 57%;
         background-color: #2C2C2C;
         color: #FFFFFF;
         cursor: pointer;
+        padding: 15px 3vw;
     }
 
     .projects__section-btn {
+        margin-top: 10px;
         display: flex;
         align-items: flex-end;
         flex-direction: row-reverse;
@@ -1146,11 +1145,10 @@ body {
     }
 
     .projects__btn {
-        max-width: 50vw;
-        min-height: 70%;
         background-color: #2C2C2C;
         color: #FFFFFF;
         cursor: pointer;
+        padding: 15px 3vw;
     }
 
     /*CONTACT*/
@@ -1466,6 +1464,10 @@ body {
 .projects__project4:hover,
 .projects__project5:hover {
     cursor: pointer;
+}
+
+.projects__btn {
+    margin-top: 5px;
 }
 
 /*CONTACT*/
