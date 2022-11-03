@@ -212,6 +212,12 @@ body {
         grid-column-start: main-content-start;
     }
 
+    .mission__title-container {
+        grid-column-start: main-content-start;
+        display: flex;
+        flex-direction: row;
+    }
+
     .mission__title {
         display: flex;
         font-size: 4em;
@@ -644,12 +650,14 @@ body {
 
     /* Отступы, чтобы весь контент mission выравнивался в соответствии с основными боковыми отступами сайта (Настя) */
     .mission__title,
-    .mission__cards {
+    .mission__cards,
+    .mission__title-container {
         grid-column-start: main-content-start;
     }
 
     .mission__title {
-        display: block;
+        display: flex;
+        flex-direction: column;
         text-align: center;
 
         font-size: 4em;
@@ -1081,7 +1089,8 @@ body {
 
     /* Отступы, чтобы весь контент mission выравнивался в соответствии с основными боковыми отступами сайта (Настя) */
     .mission__title,
-    .mission__cards {
+    .mission__cards,
+    .mission__title-container {
         grid-column-start: main-content-start;
     }
 
