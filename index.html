@@ -11,17 +11,21 @@
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Source+Sans+Pro:wght@400;700&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Source+Sans+Pro:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        .test {
+            width: 222px;
+            height: 71px;
+            background-color: black;
+        }
+    </style>
 </head>
 
 <body>
     <header class="header">
         <div class="header__logo"></div>
         <nav class="header__menu">
-            <!-- Нужно обязательно проверить, чтобы названия ссылок совпадали с названиями файлов страниц, когда сделаем их -->
             <a class="header__link" href="index.html">Main</a>
             <a class="header__link" href="gallery.html">Gallery</a>
             <a class="header__link" href="projects.html">Projects</a>
@@ -80,11 +84,12 @@
                 </svg>
                 <span class="intro__slide-numbers">02</span>
             </div>
-         <div class="intro__project">        
-            <img class="intro__project-img" src="pictures/section_intro_img.png" alt="project-lorum-image">
-            <a href="#" class="button-btn section__btn--light">VIEW PROJECT &rarr;</a>
+        <div class="intro__project">        
+            <img class="intro__project-img" src="pictures/section_intro_img.png" alt="Project image">
+            <a href="#" class="intro__project-btn section__btn section__btn--light">VIEW PROJECT &rarr;</a>
         </div>      
     </section>
+    <div class="test"></div>
 
     <section class="about">
         <div class="about__content">
@@ -104,9 +109,9 @@
                     printer took a galley of type and scrambled it to make a type specimen book. It has survived not
                     only five centuries, but also the leap into electronic typesetting, remaining essentially
                     unchanged.</span>
-                <p class="about__link">
-                    <a href="#" class="button-btn about__link-btn">Read More &rarr;</a>
-                </p>
+                <div class="about__link">
+                    <a href="#" class="about__link-btn section__btn section__btn--light">Read More &rarr;</a>
+                </div>
             </div>
         </div>
     </section>
@@ -152,16 +157,14 @@
                         <img class="projects__img" src="pictures/first-project.png" alt="Project photo">
                         <div class="projects__overlay">
                             <p class="projects__project-name">Sample<br> Project</p>
-                            <a class="projects__project-link" href="link">view more &rarr;</a>
+                            <a class="projects__project-link" href="#">view more &rarr;</a>
                         </div>
                     </div>
-                    <!-- <img class="line-one__cover" src="pictures/cover-pic.png" alt="cover"> -->
-
                     <div class="projects__project2">
                         <img class="projects__img" src="pictures/second-project.png" alt="Project photo">
                         <div class="projects__overlay">
                             <p class="projects__project-name">Sample<br> Project</p>
-                            <a class="projects__project-link" href="link">view more &rarr;</a>
+                            <a class="projects__project-link" href="#">view more &rarr;</a>
                         </div>
                     </div>
                 </div>
@@ -171,28 +174,28 @@
                         <img class="projects__img" src="pictures/third-project.png" alt="Project photo">
                         <div class="projects__overlay">
                             <p class="projects__project-name">Sample<br> Project</p>
-                            <a class="projects__project-link" href="link">view more &rarr;</a>
+                            <a class="projects__project-link" href="#">view more &rarr;</a>
                         </div>
                     </div>
                     <div class="projects__project4">
                         <img class="projects__img" src="pictures/forth-project.png" alt="Project photo">
                         <div class="projects__overlay">
                             <p class="projects__project-name">Sample<br> Project</p>
-                            <a class="projects__project-link" href="link">view more &rarr;</a>
+                            <a class="projects__project-link" href="#">view more &rarr;</a>
                         </div>
                     </div>
                     <div class="projects__project5">
                         <img class="projects__img" src="pictures/fifth-project.png" alt="Project photo">
                         <div class="projects__overlay">
                             <p class="projects__project-name">Sample<br> Project</p>
-                            <a class="projects__project-link" href="link">view more &rarr;</a>
+                            <a class="projects__project-link" href="#">view more &rarr;</a>
                         </div>
                     </div>
                 </div>
             </div>
 
             <div class="projects__section-btn">
-                <a href="#" class="button-btn projects__btn">All Projects &rarr;</a>
+                <a href="projects.html" class="projects__btn section__btn section__btn--dark">All Projects &rarr;</a>
             </div>
         </div>
     </section>
@@ -211,7 +214,7 @@
                 <img class="contact__background" src="pictures/contact_img.png" alt="Background image">
             </div>
             <div class="contact__btn-container">
-                <button class="button-btn contact__button" form="contact__form">Send Email &rarr;</button>
+                <button class="section__btn section__btn--dark" form="contact__form">Send Email &rarr;</button>
             </div>
         </div>
     </section>
@@ -247,22 +250,22 @@
                 <a class="footer__link" href="mailto:sampleemail@gmail.com">sampleemail@gmail.com</a>
             </div>
             <div class="footer__social">
-                <a class="footer__social-link" href="facebook-link">
+                <a class="footer__social-link" href="#">
                     <svg width="10px" height="19px">
                         <use xlink:href="images/sprite.svg#footer-fb"></use>
                     </svg>
                 </a>
-                <a class="footer__social-link" href="twitter-link">
+                <a class="footer__social-link" href="#">
                     <svg width="22px" height="17px">
                         <use xlink:href="images/sprite.svg#footer-tw"></use>
                     </svg>
                 </a>
-                <a class="footer__social-link" href="linkedin-link">
+                <a class="footer__social-link" href="#">
                     <svg width="20px" height="20px">
                         <use xlink:href="images/sprite.svg#footer-li"></use>
                     </svg>
                 </a>
-                <a class="footer__social-link" href="pinterest-link">
+                <a class="footer__social-link" href="#">
                     <svg width="14px" height="19px">
                         <use xlink:href="images/sprite.svg#footer-pin"></use>
                     </svg>

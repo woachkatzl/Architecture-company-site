@@ -66,23 +66,23 @@ body {
         margin-bottom: 3em;
     }
 
-    .intro__project-name {        
+    .intro__project-name {
         grid-row-start: intro-title-start;
         grid-column-start: intro-content-start;
         display: flex;
         flex-direction: column;
         justify-content: center;
-    } 
+    }
 
     .intro__btns {
         grid-row-start: btns-start;
         grid-column-start: intro-content-start;
         display: flex;
-        align-items: center;       
+        align-items: center;
     }
 
     .intro__btn {
-        margin-right: 25px;        
+        margin-right: 25px;
     }
 
     .intro__btn:active {
@@ -91,16 +91,16 @@ body {
 
     .intro__slides {
         grid-row-start: slides-start;
-        grid-column-start: intro-content-start;  
+        grid-column-start: intro-content-start;
         display: flex;
-        align-items: flex-start;         
+        align-items: flex-start;
     }
 
     .intro__slide-numbers {
         margin-right: 20px;
         font-size: 24px;
         line-height: 24px;
-        color: #BDBDBD;       
+        color: #BDBDBD;
     }
 
     .intro__project {
@@ -113,10 +113,6 @@ body {
 
     .intro__project-img {
         max-width: 100%;
-    }
-
-    .section__btn--light {
-        padding: 2vw 2.2vw;   
     }
 
     .intro__text {
@@ -177,11 +173,6 @@ body {
         width: 20vw;
         height: 25vw;
     }
-
-    .about__link-btn {
-        padding: 1.3vw 3vw;
-    }
-
 
     /* MISSION */
 
@@ -250,13 +241,6 @@ body {
     .projects__imgs-line2 {
         display: flex;
         justify-content: space-between;
-    }
-
-    .projects__btn {
-        padding: 1.3vw 3vw;
-        color: #FFFFFF;
-        background-color: #2C2C2C;
-        cursor: pointer;
     }
 
     .projects__section-btn {
@@ -339,11 +323,6 @@ body {
     .contact__btn-container {
         display: flex;
         align-items: flex-end;
-    }
-
-    .contact__button {
-        min-width: 50%;
-        min-height: 50%;
     }
 
     /* FOOTER */
@@ -489,25 +468,26 @@ body {
     }
 
     .intro__project-name,
-    .intro__btns,  
+    .intro__btns,
     .intro__project {
         grid-column-start: intro-content-start;
     }
 
-    .intro__project-name {  
+    .intro__project-name {
         text-align: center;
     }
-    
+
     .intro__title {
         margin-bottom: 10px;
     }
-      .intro__btns {
+
+    .intro__btns {
         display: flex;
-        justify-content: center;   
+        justify-content: center;
         padding: 20px;
     }
 
-    .intro__btn {  
+    .intro__btn {
         margin-right: 10px;
         margin-left: 10px;
     }
@@ -531,11 +511,7 @@ body {
         max-width: 100%;
     }
 
-    .section__btn--light {
-        padding: 2vw 2.2vw;   
-    }
-
-    .intro__text {      
+    .intro__text {
         font-size: 64px;
         font-weight: 700;
         color: #333333;
@@ -598,8 +574,9 @@ body {
         text-align: center;
     }
 
-    .about__link-btn {
-        padding: 15px 3vw;
+    .about__link {
+        display: flex;
+        justify-content: center;
     }
 
     /* MISSION */
@@ -684,13 +661,6 @@ body {
         padding-left: 10%;
     }
 
-    .projects__btn {
-        background-color: #2C2C2C;
-        color: #FFFFFF;
-        cursor: pointer;
-        padding: 15px 3vw;
-    }
-
     .projects__section-btn {
         margin-top: 10px;
         display: flex;
@@ -748,11 +718,6 @@ body {
         align-items: flex-end;
         width: 100%;
         justify-content: center;
-    }
-
-    .contact__button {
-        min-width: 25%;
-        min-height: 50%;
     }
 
     /* FOOTER */
@@ -910,22 +875,23 @@ body {
         grid-column-start: intro-content-start;
     }
 
-    .intro__project-name {  
+    .intro__project-name {
         text-align: center;
     }
-    
+
     .intro__title {
         margin-bottom: 10px;
     }
-      .intro__btns {
+
+    .intro__btns {
         display: flex;
-        justify-content: center;   
+        justify-content: center;
         padding: 20px;
     }
 
-    .intro__btn {  
+    .intro__btn {
         margin-right: 10px;
-        margin-left: 10px;  
+        margin-left: 10px;
     }
 
     .intro__btn:active {
@@ -947,11 +913,7 @@ body {
         max-width: 100%;
     }
 
-    .section__btn--light {
-        padding: 2vw 2.2vw;  
-    }
-
-    .intro__text { 
+    .intro__text {
         font-size: 64px;
         font-weight: 700;
         color: #333333;
@@ -1014,8 +976,9 @@ body {
         text-align: center;
     }
 
-    .about__link-btn {
-        padding: 15px 3vw;
+    .about__link {
+        display: flex;
+        justify-content: center;
     }
 
     /* MISSION */
@@ -1091,13 +1054,6 @@ body {
         justify-content: center;
     }
 
-    .projects__btn {
-        background-color: #2C2C2C;
-        color: #FFFFFF;
-        cursor: pointer;
-        padding: 15px 3vw;
-    }
-
     /*CONTACT*/
     .contact__images {
         display: none;
@@ -1145,11 +1101,6 @@ body {
         display: flex;
         align-items: flex-end;
         justify-content: center;
-    }
-
-    .contact__button {
-        min-width: 50%;
-        min-height: 50%;
     }
 
     /* FOOTER */
@@ -1275,18 +1226,10 @@ body {
     background-color: #c8c6c6;
 }
 
-.section__btn--light {
-    position: absolute;        
-    bottom: 0; 
-    left: 0;    
-    cursor: pointer;
-    text-align: center;
-    color: #333333;
-    background-color: #F2F2F2;
-}
-
-.section__btn--light:hover {
-    background-color: #c8c6c6;
+.intro__project-btn {
+    position: absolute;
+    bottom: 0;
+    left: 0;
 }
 
 /*ABOUT*/
@@ -1305,24 +1248,11 @@ body {
     line-height: 25px;
 }
 
-.button-btn {
-    margin-top: 20px;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 12px;
-    letter-spacing: 0.2em;
-    text-transform: uppercase;
-    border: none;
-}
-
 .about__link {
     margin-top: 40px;
 }
 
 .about__link-btn {
-    background-color: #F2F2F2;
-    color: black;
     margin-top: 50px;
 }
 
@@ -1432,7 +1362,6 @@ body {
     width: 30%;
 }
 
-.projects__btn:hover,
 .projects__project1:hover,
 .projects__project2:hover,
 .projects__project3:hover,
@@ -1478,14 +1407,8 @@ body {
     border: none;
 }
 
-.contact__button {
-    background-color: #2C2C2C;
-    color: #FFFFFF;
-    cursor: pointer;
-}
-
-
 /* FOOTER */
+
 .footer {
     color: #FFFFFF;
     background-color: #2C2C2C;
@@ -1528,10 +1451,45 @@ body {
 }
 
 /* GENERAL */
+
 a {
     text-decoration: none;
 }
 
 p {
     margin: 0;
+}
+
+.section__btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 222px;
+    height: 71px;
+    margin-top: 20px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 12px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    border: none;
+    cursor: pointer;
+}
+
+.section__btn--light {
+    color: #333333;
+    background-color: #F2F2F2;
+}
+
+.section__btn--dark {
+    color: #FFFFFF;
+    background-color: #2C2C2C;
+}
+
+.section__btn--light:hover {
+    background-color: #c8c6c6;
+}
+
+.section__btn--dark:hover {
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5);
 }
