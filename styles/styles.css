@@ -37,6 +37,15 @@ body {
         min-width: max-content;
     }
 
+    .header__menu--narrow {
+        display: none;
+    }
+
+    .header__link {
+        border: 1px solid #FFFFFF;
+        /* Добавила здесь border чтобы ссылки не прыгали при наведении курсора. Потому что при наведении появляется оформление border снизу и сверху (Юля) */
+    }
+
     /* MAIN */
 
     .main {
@@ -170,17 +179,17 @@ body {
         width: 90%;
     }
 
-    .about__images-group1_img1 {
+    .about___img1 {
         width: 20vw;
         height: 18vw;
     }
 
-    .about__images-group1_img3 {
+    .about__img3 {
         width: 20vw;
         height: 10vw;
     }
 
-    .about__images-group1_img2 {
+    .about__img2 {
         width: 20vw;
         height: 25vw;
     }
@@ -199,30 +208,42 @@ body {
 
     /* Отступы, чтобы весь контент mission выравнивался в соответствии с основными боковыми отступами сайта (Настя) */
     .mission__title,
-    .mission-cards {
+    .mission__cards {
         grid-column-start: main-content-start;
     }
 
-    .mission-cards {
+    .mission__title-container {
+        grid-column-start: main-content-start;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .mission__title {
+        display: flex;
+        font-size: 4em;
+        line-height: 64px;
+    }
+
+    .mission__cards {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         column-gap: 10%;
     }
 
     .title-text {
-        font-size: 56px;
+        font-size: 58px;
     }
 
-    .mission-cards__card {
+    .mission__card {
         display: grid;
         grid-template-columns: 30% 70%;
     }
 
-    .card-value__number {
+    .mission__card-number {
         font-size: 160px;
     }
 
-    .card-text {
+    .mission__card-text {
         font-size: 20px;
         font-weight: 400;
         line-height: 28px;
@@ -230,45 +251,59 @@ body {
 
     /* PROJECTS */
 
+    .projects__title {
+        font-size: 4em;
+        line-height: 64px;
+    }
+
     .projects__images {
         display: grid;
         grid-template-rows: repeat(2, 1fr);
         gap: 5%;
     }
 
-    .projects__images-line-one,
-    .projects__images-line-two {
+    .projects__imgs-line1,
+    .projects__imgs-line2 {
         display: flex;
         justify-content: space-between;
     }
 
-    .projects-button {
-        font-size: 0.5em;
-
-        width: 19%;
-        min-height: 50%;
-        background-color: #2C2C2C;
+    .projects__btn {
+        padding: 1.3vw 3vw;
         color: #FFFFFF;
+        background-color: #2C2C2C;
         cursor: pointer;
     }
 
     .projects__section-btn {
+        margin-top: 0px;
         display: flex;
         align-items: flex-end;
         flex-direction: row-reverse;
     }
 
-    .line-one__cover {
-        position: absolute;
-        box-sizing: border-box;
-        opacity: 0.8;
+    .projects__project4 {
         width: 40%;
-        padding-right: 4px;
     }
 
-
-    .line-two__image-four {
+    .projects__overlay {
+        position: absolute;
         width: 40%;
+        height: 20%;
+    }
+
+    .projects__project-name {
+        padding-top: 7%;
+        padding-bottom: 2%;
+        padding-left: 10%;
+        font-size: 4em;
+    }
+
+    .projects__project-link {
+        font-size: 1em;
+        padding-top: 7%;
+        padding-bottom: 2%;
+        padding-left: 10%;
     }
 
     /*CONTACT*/
@@ -317,12 +352,12 @@ body {
         width: 100%;
     }
 
-    .contact__button {
+    .contact__btn-container {
         display: flex;
         align-items: flex-end;
     }
 
-    .contact-button {
+    .contact__button {
         min-width: 50%;
         min-height: 50%;
     }
@@ -343,7 +378,7 @@ body {
         min-width: 165px;
     }
 
-    .footer-content {
+    .footer__content {
         display: grid;
         grid-template-rows: 45px [footer-address-start footer-social-start] 40px 40px [footer-address-end footer-phone-start] 40px 40px [footer-phone-end] 40px [footer-social-end];
         grid-template-columns: 24% [footer-contact-start] 1fr [footer-contact-end footer-social-start] 1fr [footer-social-end];
@@ -379,6 +414,86 @@ body {
 
 /* TABLET - ПЛАНШЕТ */
 @media screen and (min-width: 420px) and (max-width: 939px) {
+
+    /* HEADER */
+
+    .header {
+        display: grid;
+        grid-template-columns: 9.4vw [header-menu-start] 1fr 9.4vw;
+        align-items: center;
+        min-height: 102px;
+    }
+
+    .header__menu {
+        display: none;
+    }
+
+    .header__menu--narrow {
+        grid-column-start: header-menu-start;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        height: 100%;
+        background-image: url(../images/header-logo.svg);
+        background-repeat: no-repeat;
+        background-position: left center;
+    }
+
+    .header__title {
+        margin-right: 30px;
+    }
+
+    .header__menu-btn {
+        width: 44px;
+        height: 44px;
+    }
+
+    .header__hidden-menu {
+        visibility: hidden;
+        position: fixed;
+        top: -1000px;
+        right: 0;
+        display: block;
+        width: 100%;
+        height: 100%;
+        background: #F2F2F2;
+        transition: 1s;
+    }
+
+    .header__overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity .35s, visibility .35s, height .35s;
+        overflow: hidden;
+        background: #c8c8c8;
+        z-index: -1;
+    }
+
+    .header__links-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        height: 50vh;
+    }
+
+    .header__hidden-link {
+        list-style-type: none;
+    }
+
+    .header__click:checked~.header__hidden-menu {
+        visibility: visible;
+        top: 102px;
+    }
+
+    .header__click:checked~.header__overlay {
+        visibility: visible;
+        opacity: 0.6;
+    }
 
     /*INTRO*/
 
@@ -495,16 +610,16 @@ body {
 
     }
 
-    .about__images-group1_img1 {
+    .about___img1 {
         width: 30vw;
         height: 28vw;
     }
 
-    .about__images-group1_img3 {
+    .about__img3 {
         width: 30vw;
     }
 
-    .about__images-group1_img2 {
+    .about__img2 {
         width: 30vw;
         height: 35vw;
     }
@@ -528,29 +643,35 @@ body {
 
     /* Отступы, чтобы весь контент mission выравнивался в соответствии с основными боковыми отступами сайта (Настя) */
     .mission__title,
-    .mission-cards {
+    .mission__cards,
+    .mission__title-container {
         grid-column-start: main-content-start;
     }
 
-    .mission-cards {
+    .mission__title {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+
+        font-size: 4em;
+        line-height: 64px;
+    }
+
+    .mission__cards {
         display: grid;
         grid-template-rows: repeat(2, 1fr);
     }
 
-    .title-text {
-        font-size: 56px;
-    }
-
-    .mission-cards__card {
+    .mission__card {
         display: grid;
         grid-template-columns: 30% 70%;
     }
 
-    .card-value__number {
+    .mission__card-number {
         font-size: 160px;
     }
 
-    .card-text {
+    .mission__card-text {
         font-size: 20px;
         font-weight: 400;
         line-height: 28px;
@@ -558,40 +679,52 @@ body {
 
     /* PROJECTS */
 
+    .projects__title {
+        text-align: center;
+
+        font-size: 4em;
+        line-height: 64px;
+    }
+
     .projects__images {
         display: grid;
         grid-template-rows: repeat(2, 1fr);
         gap: 5%;
     }
 
-    .projects__images-line-one,
-    .projects__images-line-two {
+    .projects__imgs-line1,
+    .projects__imgs-line2 {
         display: flex;
         justify-content: space-between;
     }
 
-    .line-one__cover {
-        position: absolute;
-        box-sizing: border-box;
-        opacity: 0.8;
-        width: 40%;
-        min-height: 11%;
-    }
-
-
-    .line-two__image-four {
+    .projects__project4 {
         width: 40%;
     }
 
-    .projects-button {
-        min-width: 25%;
-        min-height: 57%;
+    .projects__project-name {
+        padding-top: 7%;
+        padding-bottom: 2%;
+        padding-left: 10%;
+        font-size: 2em;
+    }
+
+    .projects__project-link {
+        font-size: 0.75em;
+        padding-top: 7%;
+        padding-bottom: 2%;
+        padding-left: 10%;
+    }
+
+    .projects__btn {
         background-color: #2C2C2C;
         color: #FFFFFF;
         cursor: pointer;
+        padding: 15px 3vw;
     }
 
     .projects__section-btn {
+        margin-top: 10px;
         display: flex;
         align-items: flex-end;
         flex-direction: row-reverse;
@@ -642,14 +775,14 @@ body {
         height: 20vh;
     }
 
-    .contact__button {
+    .contact__btn-container {
         display: flex;
         align-items: flex-end;
         width: 100%;
         justify-content: center;
     }
 
-    .contact-button {
+    .contact__button {
         min-width: 25%;
         min-height: 50%;
     }
@@ -669,7 +802,7 @@ body {
         min-width: 165px;
     }
 
-    .footer-content {
+    .footer__content {
         display: grid;
         grid-template-rows: 45px [footer-address-start] 40px 40px [footer-address-end footer-phone-start] 40px 40px [footer-phone-end] 70px [footer-btm-title-start] 45px [footer-btm-title-end footer-social-start] 68px [footer-social-end];
         grid-template-columns: [footer-social-start] minmax(max-content, 60%) [footer-contact-start] minmax(max-content, 1fr) [footer-contact-end footer-social-end];
@@ -713,6 +846,86 @@ body {
 
 /* SMARTPHONE - СМАРТФОН */
 @media screen and (max-width: 419px) {
+
+    /* HEADER */
+
+    .header {
+        display: grid;
+        grid-template-columns: 9.4vw [header-logo-start header-menu-start] 1fr 9.4vw;
+        align-items: center;
+        min-height: 102px;
+    }
+
+    .header__menu {
+        display: none;
+    }
+
+    .header__menu--narrow {
+        grid-column-start: header-menu-start;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        height: 100%;
+        background-image: url(../images/header-logo.svg);
+        background-repeat: no-repeat;
+        background-position: left center;
+    }
+
+    .header__title {
+        margin-right: 30px;
+    }
+
+    .header__menu-btn {
+        width: 44px;
+        height: 44px;
+    }
+
+    .header__hidden-menu {
+        visibility: hidden;
+        position: fixed;
+        top: -1000px;
+        left: 0;
+        display: block;
+        width: 100%;
+        height: 100%;
+        background: #F2F2F2;
+        transition: 0.9s;
+    }
+
+    .header__overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity .35s, visibility .35s, height .35s;
+        overflow: hidden;
+        background: #c8c8c8;
+        z-index: -1;
+    }
+
+    .header__links-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        height: 50vh;
+    }
+
+    .header__hidden-link {
+        list-style-type: none;
+    }
+
+    .header__click:checked~.header__hidden-menu {
+        visibility: visible;
+        top: 102px;
+    }
+
+    .header__click:checked~.header__overlay {
+        visibility: visible;
+        opacity: 0.6;
+    }
 
     /*INTRO*/
 
@@ -828,16 +1041,16 @@ body {
         justify-content: center;
     }
 
-    .about__images-group1_img1 {
+    .about___img1 {
         width: 35vw;
         height: 33vw;
     }
 
-    .about__images-group1_img3 {
+    .about__img3 {
         width: 35vw;
     }
 
-    .about__images-group1_img2 {
+    .about__img2 {
         width: 35vw;
         height: 40vw;
     }
@@ -861,30 +1074,39 @@ body {
 
     /* Отступы, чтобы весь контент mission выравнивался в соответствии с основными боковыми отступами сайта (Настя) */
     .mission__title,
-    .mission-cards {
+    .mission__cards,
+    .mission__title-container {
         grid-column-start: main-content-start;
     }
 
-    .mission-cards {
+    .mission__title {
+        text-align: center;
+        font-size: 2em;
+    }
+
+    .mission__cards {
         display: grid;
         grid-template-rows: repeat(2, 1fr);
+
+        text-align: center;
     }
 
-    .title-text {
-        font-size: 3em;
-    }
-
-    .card-value__number {
+    .mission__card-number {
         display: none;
     }
 
-    .card-text {
+    .mission__card-text {
         font-size: 1em;
         font-weight: 400;
         line-height: 1.5em;
     }
 
     /* PROJECTS */
+
+    .projects__title {
+        text-align: center;
+        font-size: 2em;
+    }
 
     .projects__images {
         display: flex;
@@ -894,19 +1116,19 @@ body {
         gap: 5%;
     }
 
-    .projects__images-line-one,
-    .projects__images-line-two {
+    .projects__imgs-line1,
+    .projects__imgs-line2 {
         display: flex;
         justify-content: center;
     }
 
-    .line-one__image-two,
-    .line-two__image-three,
-    .line-two__image-five {
+    .projects__project2,
+    .projects__project3,
+    .projects__project5 {
         display: none;
     }
 
-    .line-two__image-four {
+    .projects__project4 {
         width: 49%;
     }
 
@@ -916,12 +1138,11 @@ body {
         justify-content: center;
     }
 
-    .projects-button {
-        max-width: 50vw;
-        min-height: 70%;
+    .projects__btn {
         background-color: #2C2C2C;
         color: #FFFFFF;
         cursor: pointer;
+        padding: 15px 3vw;
     }
 
     /*CONTACT*/
@@ -967,13 +1188,13 @@ body {
         height: 20vh;
     }
 
-    .contact__button {
+    .contact__btn-container {
         display: flex;
         align-items: flex-end;
         justify-content: center;
     }
 
-    .contact-button {
+    .contact__button {
         min-width: 50%;
         min-height: 50%;
     }
@@ -993,7 +1214,7 @@ body {
         min-width: 165px;
     }
 
-    .footer-content {
+    .footer__content {
         display: grid;
         grid-template-rows: 45px 40px 40px 70px [footer-mid-title-start] 45px [footer-address-start] 65px [footer-phone-start] 40px [footer-email-start] 70px [footer-btm-title-start] 45px [footer-social-start] 68px;
         grid-template-columns: [footer-start] 50% [footer-mid] 50% [footer-end];
@@ -1066,14 +1287,19 @@ body {
 }
 
 /* HEADER */
-.header__link {
+
+.header__click {
+    display: none;
+}
+
+.header__link,
+.header__title {
     font-size: 12px;
+    font-weight: 400;
     line-height: 18px;
     letter-spacing: 0.2em;
     text-transform: uppercase;
     color: #333333;
-    border: 1px solid #FFFFFF;
-    /* Добавила здесь border чтобы ссылки не прыгали при наведении курсора. Потому что при наведении появляется оформление border снизу и сверху (Юля) */
 }
 
 .header__link:hover,
@@ -1130,16 +1356,16 @@ body {
     cursor: pointer;
 }
 
-.card-value,
-.card-text__container {
+.mission__card-value,
+.mission__text-container {
     align-self: center;
 }
 
-.card-value p {
+.mission__card-value p {
     margin: 0;
 }
 
-.card-value__number {
+.mission__card-number {
     color: #F2F2F2;
     font-weight: 900;
 }
@@ -1164,38 +1390,78 @@ body {
     margin-bottom: 10%;
 }
 
-.line-one__image-one {
-    width: 49%;
+.projects__project1 {
     position: relative;
+    width: 49%;
 }
 
-.line-one__cover {
+.projects__img {
+    min-width: 100%;
+    max-width: 100%;
+    height: 100%;
+}
+
+.projects__project-name {
+    color: #fff;
+    font-weight: 700;
+}
+
+.projects__project-link {
+    font-weight: 300;
+    letter-spacing: 3px;
+    color: #fff;
+
+    text-transform: uppercase;
+}
+
+.projects__overlay {
     position: absolute;
-    box-sizing: border-box;
-    opacity: 0.8;
-    width: 40%;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
 }
 
-.line-one__image-two {
+.projects__overlay:hover {
+    background-color: #333333;
+    opacity: 0.8;
+}
+
+.projects__project-link:hover {
+    text-decoration: underline;
+}
+
+.projects__project2 {
+    position: relative;
     width: 48%;
 }
 
-.line-two__image-three {
+.projects__project3 {
+    position: relative;
     width: 25%;
 }
 
-.line-two__image-five {
+.projects__project4 {
+    position: relative;
+}
+
+.projects__project5 {
+    position: relative;
     width: 30%;
 }
 
-.projects-button:hover,
-.line-one__image-one:hover,
-.line-one__cover:hover,
-.line-one__image-two:hover,
-.line-two__image-three:hover,
-.line-two__image-four:hover,
-.line-two__image-five:hover {
+.projects__btn:hover,
+.projects__project1:hover,
+.projects__project2:hover,
+.projects__project3:hover,
+.projects__project4:hover,
+.projects__project5:hover {
     cursor: pointer;
+}
+
+.projects__btn {
+    margin-top: 5px;
 }
 
 /*CONTACT*/
@@ -1221,12 +1487,17 @@ body {
     border: none;
 }
 
+.contact__input:focus,
+.contact__textarea:focus {
+    outline: none;
+}
+
 .contact__textarea {
     background: #F3F3F3;
     border: none;
 }
 
-.contact-button {
+.contact__button {
     background-color: #2C2C2C;
     color: #FFFFFF;
     cursor: pointer;
