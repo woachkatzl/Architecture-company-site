@@ -50,85 +50,85 @@ body {
     /*INTRO*/
 
     .intro {
+        grid-template-rows: [intro-title-start intro-image-start] 56% [btns-start] 28% [slides-start] 1fr [intro-image-end];
+        grid-template-columns: 9.4vw [intro-content-start] minmax(300px, 28%) [intro-image-start] 1fr [intro-image-end] 9.4vw;
         display: grid;
-        grid-template-columns: 9.4vw [intro-content-start] minmax(300px, 28%) [intro-image-start] 9.4vw;
-        min-height: 900px;
+        min-height: max-content;
+        margin-bottom: 3em;
     }
 
-    .intro__content {
+    .intro__project-name {        
+        grid-row-start: intro-title-start;
         grid-column-start: intro-content-start;
-    }
-
-    .intro__projectlorum {
-        display: grid;
-        padding-top: 33vh;
-        padding-bottom: 5vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     } 
 
-    .intro-button1 {
-        display: inline-block;
-        width: 52.95px;
+    .intro__btns {
+        grid-row-start: btns-start;
+        grid-column-start: intro-content-start;
+        display: flex;
+        align-items: center;       
+    }
+
+    .intro__btn {
+        width: 53px;
         height: 53px;
+        margin-right: 25px;
         cursor: pointer;
-        background-color: #FFFFFF;
+        background-color: #F2F2F2;
         border: 1px solid #F2F2F2;
     }
 
-    .intro-button1:active {
-        background-color: #C4C4C4;
+    .intro__btn:active {
+        background-color: #8D8D8D;
     }
 
-    .intro-button2 {
-        display: inline-block;
-        width: 52.95px;
-        height: 53px;
+    .intro__slides {
+        grid-row-start: slides-start;
+        grid-column-start: intro-content-start;  
+        display: flex;
+        align-items: flex-start;         
+    }
+
+    .intro__slide-numbers {
+        margin-right: 20px;
+        font-size: 24px;
+        line-height: 24px;
+        color: #BDBDBD;       
+    }
+
+    .intro__project {
+        grid-area: intro-image-start / intro-image-start / intro-image-end / intro-image-end;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+
+    .intro__project-img {
+        max-width: 100%;
+    }
+
+    .section__btn--light {
+        position: absolute;        
+        bottom: 0; 
+        left: 0;   
+        padding: 2vw 2.2vw;   
         cursor: pointer;
-        margin-left: 1.5vw;
-        background-color: #f9f9f9;
-        border: 1px solid #F2F2F2;
-    }
-
-    .intro-button2:active {
-        background-color: #C4C4C4;
-    }
-
-    .intro__slidenumbers {
-        display: grid;
-        padding-top: 10vh;
-    }
-
-    .intro__image {
-        grid-column-start: intro-image-start;
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-areas: "intro-img1";
-    }
-
-    .intro-img1 {
-        grid-column-start: intro-image-start;
-        display: grid;
-    }
-
-    .intro-button3 {
-        position: absolute;
-        top: 860px;              
-        width: 221.81px;
-        height: 71px;
-        cursor: pointer;
-        font-size: small;
-        letter-spacing: 3px;
         text-align: center;
         color: #333333;
-        background-color: #FFFFFF;
-        border: none;
-    }
-
-    .intro-button3:hover {
         background-color: #F2F2F2;
     }
 
-    .intro-text {
-        font-weight: bold;
+    .section__btn--light:hover {
+        background-color: #8D8D8D;
+    }
+
+    .intro__text {
+        font-size: 64px;
+        font-weight: 700;
         color: #333333;
     }
 
@@ -383,85 +383,78 @@ body {
     /*INTRO*/
 
     .intro {
-        display: grid;
+        grid-template-rows: max-content max-content 1fr;
         grid-template-columns: 9.4vw [intro-content-start] 1fr [intro-content-end] 9.4vw;
+        display: grid;
         margin-bottom: 3em;
     }
 
-    .intro__content,
-    .intro__image {
+    .intro__project-name,
+    .intro__btns,  
+    .intro__project {
         grid-column-start: intro-content-start;
     }
 
-    .intro__projectlorum {
+    .intro__project-name {  
         text-align: center;
     }
     
-    .intro__buttons {
+    .intro__title {
+        margin-bottom: 10px;
+    }
+      .intro__btns {
         display: flex;
-        justify-content: center;
-        margin-bottom: 1em;
+        justify-content: center;   
+        padding: 20px;
     }
 
-    .intro-button1 {
-        display: inline-block;
-        width: 52.95px;
+    .intro__btn {  
+        width: 53px;
         height: 53px;
+        margin-right: 10px;
+        margin-left: 10px;        
         cursor: pointer;
-        background-color: #FFFFFF;
+        background-color: #F2F2F2;
         border: 1px solid #F2F2F2;
     }
 
-    .intro-button1:active {
-        background-color: #C4C4C4;
+    .intro__btn:active {
+        background-color: #8D8D8D;
     }
 
-    .intro-button2 {
-        display: inline-block;
-        width: 52.95px;
-        height: 53px;
-        cursor: pointer;
-        margin-left: 20px;
-        background-color: #f9f9f9;
-        border: 1px solid #F2F2F2;
-    }
-
-    .intro-button2:active {
-        background-color: #C4C4C4;
-    }
-
-    .intro__slidenumbers {
+    .intro__slides {
         display: none;
     }
 
-    .intro__image {
-        display: grid;
+    .intro__project {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
     }
 
-    .intro-img1 {
-        width: 100%;
+    .intro__project-img {
+        max-width: 100%;
     }
 
-    .intro-button3 {
-        position: absolute;
-        top: 102%;
-        width: 180px;
-        height: 60px;
+    .section__btn--light {
+        position: absolute;        
+        bottom: 0; 
+        left: 0;   
+        padding: 2vw 2.2vw;   
         cursor: pointer;
-        font-size: small;
-        letter-spacing: 3px;
         text-align: center;
         color: #333333;
-        background-color: #FFFFFF;
-        border: none;
-    }
-
-    .intro-button3:hover {
         background-color: #F2F2F2;
     }
 
-    .intro-text {
-        font-weight: bold;
+    .section__btn--light:hover {
+        background-color: #8D8D8D;
+    }
+
+    .intro__text {      
+        font-size: 64px;
+        font-weight: 700;
         color: #333333;
     }
 
@@ -724,85 +717,77 @@ body {
     /*INTRO*/
 
     .intro {
-        display: grid;
         grid-template-columns: 9.4vw [intro-content-start] 1fr [intro-content-end] 9.4vw;
-        margin-bottom: 10vh;
+        display: grid;
+        margin-bottom: 3em;
     }
 
-    .intro__content,
+    .intro__project-name,
+    .intro__btns,
     .intro__image {
         grid-column-start: intro-content-start;
     }
 
-    .intro__projectlorum {
+    .intro__project-name {  
         text-align: center;
     }
-
-    .intro__buttons {
+    
+    .intro__title {
+        margin-bottom: 10px;
+    }
+      .intro__btns {
         display: flex;
-        justify-content: center;
-        margin-bottom: 3vh;
+        justify-content: center;   
+        padding: 20px;
     }
 
-    .intro-button1 {
-        display: inline-block;
-        width: 52.95px;
+    .intro__btn {  
+        width: 53px;
         height: 53px;
+        margin-right: 10px;
+        margin-left: 10px;        
         cursor: pointer;
-        background-color: #FFFFFF;
+        background-color: #F2F2F2;
         border: 1px solid #F2F2F2;
     }
 
-    .intro-button1:active {
-        background-color: #C4C4C4;
+    .intro__btn:active {
+        background-color: #8D8D8D;
     }
 
-    .intro-button2 {
-        display: inline-block;
-        width: 52.95px;
-        height: 53px;
-        cursor: pointer;
-        margin-left: 20px;
-        background-color: #f9f9f9;
-        border: 1px solid #F2F2F2;
-    }
-
-    .intro-button2:active {
-        background-color: #C4C4C4;
-    }
-
-    .intro__slidenumbers {
+    .intro__slides {
         display: none;
     }
 
-    .intro__image {
-        display: grid;
+    .intro__project {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
     }
 
-    .intro-img1 {
-        width: 100%;
+    .intro__project-img {
+        max-width: 100%;
     }
 
-    .intro-button3 {
-        position: absolute;
-        top: 135%;
-        width: 180px;
-        height: 60px;
+    .section__btn--light {
+        position: absolute;        
+        bottom: 0; 
+        left: 0;   
+        padding: 2vw 2.2vw;   
         cursor: pointer;
-        font-size: small;
-        letter-spacing: 3px;
         text-align: center;
         color: #333333;
-        background-color: #FFFFFF;
-        border: none;
-    }
-
-    .intro-button3:hover {
         background-color: #F2F2F2;
     }
 
-    .intro-text {
-        font-weight: bold;
+    .section__btn--light:hover {
+        background-color: #8D8D8D;
+    }
+
+    .intro__text { 
+        font-size: 64px;
+        font-weight: 700;
         color: #333333;
     }
 
