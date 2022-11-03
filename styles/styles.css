@@ -82,12 +82,7 @@ body {
     }
 
     .intro__btn {
-        width: 53px;
-        height: 53px;
-        margin-right: 25px;
-        cursor: pointer;
-        background-color: #F2F2F2;
-        border: 1px solid #F2F2F2;
+        margin-right: 25px;        
     }
 
     .intro__btn:active {
@@ -121,18 +116,7 @@ body {
     }
 
     .section__btn--light {
-        position: absolute;        
-        bottom: 0; 
-        left: 0;   
         padding: 2vw 2.2vw;   
-        cursor: pointer;
-        text-align: center;
-        color: #333333;
-        background-color: #F2F2F2;
-    }
-
-    .section__btn--light:hover {
-        background-color: #8D8D8D;
     }
 
     .intro__text {
@@ -524,13 +508,8 @@ body {
     }
 
     .intro__btn {  
-        width: 53px;
-        height: 53px;
         margin-right: 10px;
-        margin-left: 10px;        
-        cursor: pointer;
-        background-color: #F2F2F2;
-        border: 1px solid #F2F2F2;
+        margin-left: 10px;
     }
 
     .intro__btn:active {
@@ -553,18 +532,7 @@ body {
     }
 
     .section__btn--light {
-        position: absolute;        
-        bottom: 0; 
-        left: 0;   
         padding: 2vw 2.2vw;   
-        cursor: pointer;
-        text-align: center;
-        color: #333333;
-        background-color: #F2F2F2;
-    }
-
-    .section__btn--light:hover {
-        background-color: #8D8D8D;
     }
 
     .intro__text {      
@@ -930,6 +898,7 @@ body {
     /*INTRO*/
 
     .intro {
+        grid-template-rows: max-content max-content 1fr;
         grid-template-columns: 9.4vw [intro-content-start] 1fr [intro-content-end] 9.4vw;
         display: grid;
         margin-bottom: 3em;
@@ -937,7 +906,7 @@ body {
 
     .intro__project-name,
     .intro__btns,
-    .intro__image {
+    .intro__project {
         grid-column-start: intro-content-start;
     }
 
@@ -955,13 +924,8 @@ body {
     }
 
     .intro__btn {  
-        width: 53px;
-        height: 53px;
         margin-right: 10px;
-        margin-left: 10px;        
-        cursor: pointer;
-        background-color: #F2F2F2;
-        border: 1px solid #F2F2F2;
+        margin-left: 10px;  
     }
 
     .intro__btn:active {
@@ -984,18 +948,7 @@ body {
     }
 
     .section__btn--light {
-        position: absolute;        
-        bottom: 0; 
-        left: 0;   
-        padding: 2vw 2.2vw;   
-        cursor: pointer;
-        text-align: center;
-        color: #333333;
-        background-color: #F2F2F2;
-    }
-
-    .section__btn--light:hover {
-        background-color: #8D8D8D;
+        padding: 2vw 2.2vw;  
     }
 
     .intro__text { 
@@ -1306,6 +1259,34 @@ body {
 .header__link:active {
     border-top: 1px solid #333333;
     border-bottom: 1px solid #333333;
+}
+
+/*INTRO*/
+
+.intro__btn {
+    width: 53px;
+    height: 53px;
+    cursor: pointer;
+    background-color: #F2F2F2;
+    border: 1px solid #F2F2F2;
+}
+
+.intro__btn:active {
+    background-color: #8D8D8D;
+}
+
+.section__btn--light {
+    position: absolute;        
+    bottom: 0; 
+    left: 0;    
+    cursor: pointer;
+    text-align: center;
+    color: #333333;
+    background-color: #F2F2F2;
+}
+
+.section__btn--light:hover {
+    background-color: #c8c6c6;
 }
 
 /*ABOUT*/
