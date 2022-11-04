@@ -117,6 +117,10 @@ html {
 
 /* TABLET - ПЛАНШЕТ */
 @media screen and (min-width: 420px) and (max-width: 939px) {
+    .header__hidden-menu {
+        z-index: 10;
+    }
+
     .gallery {
         display: grid;
         grid-template-columns: 9vw [main-content-start] 1fr [main-content-end] 9vw;
@@ -173,6 +177,10 @@ html {
 
 /* SMARTPHONE - СМАРТФОН */
 @media screen and (max-width: 419px) {
+    .header__hidden-menu {
+        z-index: 10;
+    }
+
     .gallery {
         display: grid;
         grid-template-columns: 9vw [main-content-start] 1fr [main-content-end] 9vw;
