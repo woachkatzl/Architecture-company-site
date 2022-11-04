@@ -50,8 +50,6 @@ body {
 
     .main {
         display: grid;
-        grid-template-columns: 9.4vw [main-content-start] 1fr [main-content-end] 9.4vw;
-        /* так секции встанут с одинаковыми отступами с двух сторон и все будут выстраиваться по одной линии, когда меняем ширину экрана. Надо только каждой секции задать grid-column-start: main-content-start; (Юля) */
         grid-template-rows: repeat(5, max-content);
         row-gap: 120px;
     }
@@ -63,7 +61,6 @@ body {
         grid-template-columns: 9.4vw [intro-content-start] minmax(300px, 28%) [intro-image-start] 1fr [intro-image-end] 9.4vw;
         display: grid;
         min-height: max-content;
-        margin-bottom: 3em;
     }
 
     .intro__project-name {
@@ -83,10 +80,6 @@ body {
 
     .intro__btn {
         margin-right: 25px;
-    }
-
-    .intro__btn:active {
-        background-color: #8D8D8D;
     }
 
     .intro__slides {
@@ -116,7 +109,7 @@ body {
     }
 
     .intro__text {
-        font-size: 64px;
+        font-size: 4em;
         font-weight: 700;
         color: #333333;
     }
@@ -174,6 +167,10 @@ body {
         height: 25vw;
     }
 
+    .about__link {
+        margin-top: 40px;
+    }
+
     /* MISSION */
 
     .mission {
@@ -195,8 +192,6 @@ body {
 
     .mission__title {
         display: flex;
-        font-size: 4em;
-        line-height: 64px;
     }
 
     .mission__cards {
@@ -206,7 +201,8 @@ body {
     }
 
     .title-text {
-        font-size: 58px;
+        font-size: 4em;
+        line-height: 64px;
     }
 
     .mission__card {
@@ -227,8 +223,7 @@ body {
     /* PROJECTS */
 
     .projects__title {
-        font-size: 4em;
-        line-height: 64px;
+        padding-bottom: 40px;
     }
 
     .projects__images {
@@ -282,6 +277,7 @@ body {
 
     .contact__title {
         grid-column-start: main-content-start;
+        padding-bottom: 20px;
     }
 
     .contact__content {
@@ -458,13 +454,20 @@ body {
         opacity: 0.6;
     }
 
+    /* MAIN */
+
+    .main {
+        display: grid;
+        grid-template-rows: repeat(5, max-content);
+        row-gap: 100px;
+    }
+
     /*INTRO*/
 
     .intro {
         grid-template-rows: max-content max-content 1fr;
         grid-template-columns: 9.4vw [intro-content-start] 1fr [intro-content-end] 9.4vw;
         display: grid;
-        margin-bottom: 3em;
     }
 
     .intro__project-name,
@@ -492,10 +495,6 @@ body {
         margin-left: 10px;
     }
 
-    .intro__btn:active {
-        background-color: #8D8D8D;
-    }
-
     .intro__slides {
         display: none;
     }
@@ -512,7 +511,7 @@ body {
     }
 
     .intro__text {
-        font-size: 64px;
+        font-size: 4em;
         font-weight: 700;
         color: #333333;
     }
@@ -579,6 +578,10 @@ body {
         justify-content: center;
     }
 
+    .about__link {
+        margin-top: 40px;
+    }
+
     /* MISSION */
 
     .mission {
@@ -597,9 +600,6 @@ body {
         display: flex;
         flex-direction: column;
         text-align: center;
-
-        font-size: 4em;
-        line-height: 64px;
     }
 
     .mission__cards {
@@ -625,10 +625,8 @@ body {
     /* PROJECTS */
 
     .projects__title {
+        padding-bottom: 40px;
         text-align: center;
-
-        font-size: 4em;
-        line-height: 64px;
     }
 
     .projects__images {
@@ -773,6 +771,13 @@ body {
         justify-content: center;
         align-items: center;
     }
+
+    /* GENERAL */
+
+    .title-text {
+        font-size: 4em;
+        line-height: 64px;
+    }
 }
 
 
@@ -860,13 +865,18 @@ body {
         opacity: 0.6;
     }
 
+    .main {
+        display: grid;
+        grid-template-rows: repeat(5, max-content);
+        row-gap: 70px;
+    }
+
     /*INTRO*/
 
     .intro {
         grid-template-rows: max-content max-content 1fr;
         grid-template-columns: 9.4vw [intro-content-start] 1fr [intro-content-end] 9.4vw;
         display: grid;
-        margin-bottom: 3em;
     }
 
     .intro__project-name,
@@ -894,10 +904,6 @@ body {
         margin-left: 10px;
     }
 
-    .intro__btn:active {
-        background-color: #8D8D8D;
-    }
-
     .intro__slides {
         display: none;
     }
@@ -914,7 +920,7 @@ body {
     }
 
     .intro__text {
-        font-size: 64px;
+        font-size: 2em;
         font-weight: 700;
         color: #333333;
     }
@@ -981,6 +987,10 @@ body {
         justify-content: center;
     }
 
+    .about__link {
+        margin-top: 15px;
+    }
+
     /* MISSION */
 
     .mission {
@@ -995,9 +1005,12 @@ body {
         grid-column-start: main-content-start;
     }
 
+    .mission__title-container {
+        padding-bottom: 15px;
+    }
+
     .mission__title {
         text-align: center;
-        font-size: 2em;
     }
 
     .mission__cards {
@@ -1021,7 +1034,6 @@ body {
 
     .projects__title {
         text-align: center;
-        font-size: 2em;
     }
 
     .projects__images {
@@ -1068,6 +1080,7 @@ body {
         grid-column-start: main-content-start;
         display: flex;
         justify-content: center;
+        margin-top: 30px;
         margin-bottom: 30px;
     }
 
@@ -1188,6 +1201,13 @@ body {
         justify-content: center;
         align-items: center;
     }
+
+    /* GENERAL */
+
+    .title-text {
+        font-size: 2em;
+        line-height: 32px;
+    }
 }
 
 /* HEADER */
@@ -1222,8 +1242,12 @@ body {
     border: 1px solid #F2F2F2;
 }
 
-.intro__btn:active {
+.intro__btn:hover {
     background-color: #c8c6c6;
+}
+
+.intro__btn:active {
+    background-color: #b3b2b2;
 }
 
 .intro__project-btn {
@@ -1235,8 +1259,6 @@ body {
 /*ABOUT*/
 
 .about__title {
-    font-size: 4em;
-    line-height: 64px;
     margin: 0;
     margin-bottom: 20px;
 }
@@ -1248,10 +1270,6 @@ body {
     line-height: 25px;
 }
 
-.about__link {
-    margin-top: 40px;
-}
-
 .about__link-btn {
     margin-top: 50px;
 }
@@ -1261,10 +1279,6 @@ body {
 .title-text {
     font-weight: 300;
     color: #BDBDBD;
-}
-
-.title-text:hover {
-    cursor: pointer;
 }
 
 .mission__card-value,
@@ -1296,9 +1310,7 @@ body {
 .projects__container {
     display: grid;
     grid-template-rows: 80% 20%;
-    gap: 2vw;
-
-    margin-bottom: 10%;
+    gap: 30px;
 }
 
 .projects__project1 {
@@ -1321,7 +1333,6 @@ body {
     font-weight: 300;
     letter-spacing: 3px;
     color: #fff;
-
     text-transform: uppercase;
 }
 
@@ -1370,10 +1381,6 @@ body {
     cursor: pointer;
 }
 
-.projects__btn {
-    margin-top: 5px;
-}
-
 /*CONTACT*/
 ::-webkit-input-placeholder {
     font-family: 'Roboto', sans-serif;
@@ -1385,11 +1392,6 @@ body {
     padding-left: 21px;
     padding-top: 10px;
     color: #8D8D8D;
-}
-
-.contact__title {
-    font-size: 4em;
-    line-height: 64px;
 }
 
 .contact__input {
@@ -1456,7 +1458,8 @@ a {
     text-decoration: none;
 }
 
-p {
+p,
+h2 {
     margin: 0;
 }
 
