@@ -1,0 +1,81 @@
+.sample__main {
+    display: grid;
+    grid-template-rows: repeat(4, max-content);
+    grid-template-columns: 9.4vw [sample-content-start] 1fr 9.4vw;
+    row-gap: 30px;
+}
+
+.sample__title,
+.sample__main-img,
+.sample__content-container,
+.sample__blueprints {
+    grid-column-start: sample-content-start;
+}
+
+.sample__img {
+    max-width: 100%;
+    min-width: 100%;
+}
+
+/* DESKTOP - МОНИТОР КОМПЬЮТЕРА */
+@media screen and (min-width: 940px) {
+
+    .sample__main {
+        padding-bottom: 120px;
+    }
+
+    .sample__name {
+        font-size: 4em;
+        line-height: 4rem;
+        font-weight: 700;
+        color: #333333;
+    }
+
+    .sample__content-container {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        gap: 30px;
+    }
+}
+
+/* TABLET - ПЛАНШЕТ */
+@media screen and (min-width: 420px) and (max-width: 939px) {
+
+    .sample__main {
+        padding-bottom: 90px;
+    }
+
+    .sample__name {
+        font-size: 4em;
+        line-height: 4rem;
+        font-weight: 700;
+        color: #333333;
+    }
+
+    .sample__content-container {
+        display: grid;
+        grid-template-rows: 1fr max-content;
+        gap: 30px;
+    }
+}
+
+/* SMARTPHONE - СМАРТФОН */
+@media screen and (max-width: 419px) {
+
+    .sample__main {
+        padding-bottom: 60px;
+    }
+
+    .sample__name {
+        font-size: 2em;
+        line-height: 2rem;
+        font-weight: 700;
+        color: #333333;
+    }
+
+    .sample__content-container {
+        display: grid;
+        grid-template-rows: 1fr max-content;
+        gap: 30px;
+    }
+}

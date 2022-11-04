@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Architecture Company</title>
+    <link rel="shortcut icon" href="images/favicons/favicon.svg">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/sample.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Source+Sans+Pro:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header__logo">
+            <a class="header__logo-link" href="index.html">
+                <div class="header__home-click"></div>
+            </a>
+        </div>
+        <nav class="header__menu">
+            <a class="header__link" href="index.html">Main</a>
+            <a class="header__link" href="gallery.html">Gallery</a>
+            <a class="header__link" href="projects.html">Projects</a>
+            <a class="header__link" href="certification.html">Certifications</a>
+            <a class="header__link" href="contacts.html">Contacts</a>
+        </nav>
+        <div class="header__menu--narrow">
+            <a class="header__logo-link" href="index.html">
+                <div class="header__home-click"></div>
+            </a>
+            <h2 class="header__title">Menu</h2>
+            <input class="header__click" id="header__click" type="checkbox">
+            <label class="header__menu-btn" for="header__click">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                </svg>
+            </label>
+            <nav class="header__hidden-menu">
+                <ul class="header__links-container">
+                    <li class="header__hidden-link">
+                        <a class="header__link" href="index.html">Main</a>
+                    </li>
+                    <li class="header__hidden-link">
+                        <a class="header__link" href="gallery.html">Gallery</a>
+                    </li>
+                    <li class="header__hidden-link">
+                        <a class="header__link" href="projects.html">Projects</a>
+                    </li>
+                    <li class="header__hidden-link">
+                        <a class="header__link" href="certification.html">Certifications</a>
+                    </li>
+                    <li class="header__hidden-link">
+                        <a class="header__link" href="contacts.html">Contacts</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="header__overlay"></div>
+        </div>
+    </header>
+
+    <main class="sample__main">
+        <div class="sample__title">
+            <h1 class="title-text">Sample</h1>
+            <p class="sample__name">Project 1</p>
+        </div>
+
+        <div class="sample__main-img">
+            <img class="sample__img" src="pictures/sample-main-img.png" alt="Project photo">
+        </div>
+
+        <div class="sample__content-container">
+            <img class="sample__img" src="pictures/sample-content-img.png" alt="Project photo">
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with.</p>
+        </div>
+        
+        <div class="sample__blueprints">
+            <img class="sample__img" src="pictures/sample-blueprints.png" alt="Project blueprints">
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__logo"></div>
+        <div class="footer__content">
+            <p class="footer__title">Information</p>
+            <p class="footer__title footer__title--mid">Contacts</p>
+            <p class="footer__title footer__title--lower">Social Media</p>
+            <a class="footer__link footer__link--top" href="index.html">Main</a>
+            <a class="footer__link footer__link--top" href="gallery.html">Gallery</a>
+            <a class="footer__link footer__link--top" href="projects.html">Projects</a>
+            <a class="footer__link footer__link--top" href="certification.html">Certifications</a>
+            <a class="footer__link footer__link--mid" href="contacts.html">Contacts</a>
+            <div class="footer__address">
+                <svg class="footer__address-icon" width="11px" height="16px">
+                    <use xlink:href="images/sprite.svg#footer-location"></use>
+                </svg>
+                <p class="footer__text">1234 Sample Street <br>
+                    Austin Texas 78704</p>
+            </div>
+            <div class="footer__phone">
+                <svg class="footer__phone-icon" width="17px" height="16px">
+                    <use xlink:href="images/sprite.svg#footer-phone"></use>
+                </svg>
+                <a class="footer__link" href="tel:+75123332222">512.333.2222</a>
+            </div>
+            <div class="footer__email">
+                <svg class="footer__email-icon" width="16px" height="11px">
+                    <use xlink:href="images/sprite.svg#footer-email"></use>
+                </svg>
+                <a class="footer__link" href="mailto:sampleemail@gmail.com">sampleemail@gmail.com</a>
+            </div>
+            <div class="footer__social">
+                <a class="footer__social-link" href="#">
+                    <svg width="10px" height="19px">
+                        <use xlink:href="images/sprite.svg#footer-fb"></use>
+                    </svg>
+                </a>
+                <a class="footer__social-link" href="#">
+                    <svg width="22px" height="17px">
+                        <use xlink:href="images/sprite.svg#footer-tw"></use>
+                    </svg>
+                </a>
+                <a class="footer__social-link" href="#">
+                    <svg width="20px" height="20px">
+                        <use xlink:href="images/sprite.svg#footer-li"></use>
+                    </svg>
+                </a>
+                <a class="footer__social-link" href="#">
+                    <svg width="14px" height="19px">
+                        <use xlink:href="images/sprite.svg#footer-pin"></use>
+                    </svg>
+                </a>
+            </div>
+        </div>
+        <div class="footer__copyright">
+            <p>&copy; 2021 All Rights Reserved</p>
+        </div>
+    </footer>
+</body>
+</html>
