@@ -5,7 +5,7 @@ html {
 }
 
 .gallery__title-one {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto', 'Source Sans Pro', sans-serif;
     font-style: normal;
     font-weight: 300;
     font-size: 4em;
@@ -15,7 +15,7 @@ html {
 }
 
 .gallery__title-two {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto', 'Source Sans Pro', sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 4em;
@@ -39,7 +39,7 @@ html {
 }
 
 .number-link {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto', 'Source Sans Pro', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 24px;
@@ -60,7 +60,6 @@ html {
 .gallery__images-general:hover,
 .d-block:hover {
     opacity: 0.3;
-
 }
 
 .pager {
@@ -69,19 +68,46 @@ html {
 
 .pager__item {
     display: inline;
+    margin-right: 10px;
+    padding: 5px 7px;
     text-decoration: none;
     list-style: none;
     border: 1px solid rgb(202, 202, 202);
-    padding: 5px 7px;
 }
 
 .pager__link {
     color: black;
 }
 
-.pager__item-two {
+.pager__item:hover {
     background-color: #F2F2F2;
-    margin-left: 10px;
+}
+
+.pager__item:active {
+    background-color: #b3b2b2;
+}
+
+.pager__link:hover {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* HEADER */
+
+.header,
+.header__link {
+    font-family: 'Roboto', 'Source Sans Pro', sans-serif;
+}
+
+.header__link:hover {
+    text-decoration: inherit;
+    color: inherit;
+}
+
+/* FOOTER */
+
+.footer__link:hover {
+    color: inherit;
 }
 
 /* DESKTOP - МОНИТОР КОМПЬЮТЕРА */
